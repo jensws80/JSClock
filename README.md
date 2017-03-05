@@ -8,7 +8,7 @@ The graphics have a yellow color that changes too red when battery under 15%.
 
 ![alt tag](http://jensws.com/images/JSClock.png)
 ![alt tag](http://jensws.com/images/JSClock2.png)
-![alt tag](http://jensws.com/images/JSClock2.png)
+![alt tag](http://jensws.com/images/JSClock3.png)
 
 ## Version
 
