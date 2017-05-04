@@ -5,6 +5,8 @@ A digital version of Garmin watch face for Vivoactive HR.
 This clockface show clock, date, kcal, step, connection to phone, battery status and message.
 The graphics have a yellow color that changes too red when battery under 15%.
 
+<A HREF="https://apps.garmin.com/en-US/apps/26f04fcd-61e4-43df-997b-8df2dc19c9c9">https://apps.garmin.com/en-US/apps/26f04fcd-61e4-43df-997b-8df2dc19c9c9</A>
+
 
 ![alt tag](http://jensws.com/images/JSClock.png)
 ![alt tag](http://jensws.com/images/JSClock2.png)
