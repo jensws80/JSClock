@@ -18,5 +18,7 @@ The graphics have a yellow color that changes too red when battery under 15%.
 
 1.1 Add support for more clock. All Rectangle and semi round are supported.
 
+1.2 Add settings meny, You can now change color and change the two activity field between kcal, distance, step and floor (floor only Vivoactive HR). 
+
 ## License
 This project is licensed under the terms of the GNU V.3 license.
