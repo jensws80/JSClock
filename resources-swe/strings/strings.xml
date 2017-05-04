@@ -1,0 +1,27 @@
+<strings>
+    <string id="AppName">JSClock</string>
+    
+    <string id="ActivityColorTitle">Aktivitets färg</string>
+    <string id="BackgroundColorTitle">Bakgrunds färg</string>
+    <string id="DateColorTitle">Datum färg</string>
+    <string id="GraphicsColorTitle">Grafik färg</string>
+    <string id="TimeColorTitle">Tid färg</string>
+    <string id="UpperfieldColorTitle">Övre fältets färg</string>
+    <string id="Activity1Title">Aktivitets fält övre</string>
+    <string id="Activity2Title">Aktivitets fält nedre</string>
+    
+    
+    <string id="ColorBlack">Svart</string>
+    <string id="ColorDarkGray">Mörk grå</string>
+    <string id="ColorLightGray">Ljus grå</string>
+    <string id="ColorWhite">Vit</string>
+    <string id="ColorBlue">Blå</string>
+    <string id="ColorRed">Röd</string>
+    <string id="ColorYellow">Gul</string>
+    
+   	<string id="Activitystep">Steg</string>
+    <string id="Activitycalories">Kalorier</string>
+    <string id="Activityfloor">Trappor</string>
+    <string id="Activitydistance">Distans</string>
+    
+</strings>
