@@ -9,6 +9,10 @@
     
     <property id="Activity1" type="number">1</property>
     <property id="Activity2" type="number">2</property>
+    <property id="Activity3" type="number">1</property>
+    <property id="Week" type="number">1</property>
+    <property id="Goals" type="number">0</property>
+    <property id="Graphics" type="number">1</property>
     
    
 </properties>
