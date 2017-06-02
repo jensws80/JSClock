@@ -23,11 +23,10 @@ class JSClockView extends Ui.WatchFace {
     	var clockTime = Sys.getClockTime();
         var minString = Lang.format("$1$", [clockTime.min.format("%02d")]);
         var dateInfo = Calendar.info(Time.now(), Time.FORMAT_MEDIUM);
-        var dateString = Lang.format("$1$ $2$", [dateInfo.day_of_week, dateInfo.day]);
-        var monthString = Lang.format("$1$ $2$", [dateInfo.month, dateInfo.year]);
-        var datemonthString = Lang.format("$1$ $2$ $3$ $4$", [dateInfo.day_of_week, dateInfo.day, dateInfo.month, dateInfo.year]);
+        var dateInfoShort = Calendar.info(Time.now(), Time.FORMAT_SHORT);
         var batteryinfo = Lang.format("$1$%", [Sys.getSystemStats().battery.format("%02d")]);
         var stepinfo = Lang.format("$1$", [act.steps]);
+        var stepgoal = Lang.format("$1$", [act.stepGoal]);
     	var caloriesinfo = Lang.format("$1$", [act.calories.format("%02d")]);
     	var distanceinfo = act.distance / 100000.0;
     	var isConnected = Sys.getDeviceSettings().phoneConnected;
@@ -37,10 +36,14 @@ class JSClockView extends Ui.WatchFace {
     	var activity1_1_text = {}; 
     	var activity2_2 = {}; 
     	var activity2_2_text = {};
+    	var activity3_3 = {}; 
+    	var activity3_3_text = {};
     	var floorsClimbed = {};
+    	var floorsClimbedGoal = {};
     	
     	if (dc.getHeight() == 205) {
     		floorsClimbed = Lang.format("$1$", [act.floorsClimbed]);
+    		floorsClimbedGoal = Lang.format("$1$", [act.floorsClimbedGoal]);
     		}
     		
     	// Graphics
@@ -54,10 +57,10 @@ class JSClockView extends Ui.WatchFace {
          if (Sys.getSystemStats().battery< 20) {
         dc.setColor(Gfx.COLOR_RED,App.getApp().getProperty("BackgroundColor"));
         }
+        if (App.getApp().getProperty("Graphics") == 1) {
         dc.setPenWidth(4);
         dc.drawLine(1, dc.getHeight()-17, dc.getWidth(), dc.getHeight()-17);
-         
-         
+               
         if (dc.getHeight() == 205) {
         dc.setPenWidth(4);
         dc.drawCircle(dc.getWidth()-38, 65, 30);
@@ -74,6 +77,7 @@ class JSClockView extends Ui.WatchFace {
         		dc.drawCircle(dc.getWidth()-55, 55, 30);
         		dc.drawCircle(dc.getWidth()-55, 125, 30);
         		}
+        }
         		
         // Time
         dc.setColor(App.getApp().getProperty("TimeColor"),App.getApp().getProperty("BackgroundColor"));
@@ -99,15 +103,13 @@ class JSClockView extends Ui.WatchFace {
         // Date
         dc.setColor(App.getApp().getProperty("DateColor"),App.getApp().getProperty("BackgroundColor"));
         if (dc.getHeight() == 205) {
-        dc.drawText(40, 142, Gfx.FONT_XTINY, dateString, Gfx.TEXT_JUSTIFY_CENTER);
-        dc.drawText(40, 157, Gfx.FONT_XTINY, monthString, Gfx.TEXT_JUSTIFY_CENTER);
+        week.weektext(dc,dateInfoShort,dateInfo,40,142,2,App.getApp().getProperty("Week"));
         }
         	else if (dc.getHeight() == 148) {
-        	dc.drawText(142, 105, Gfx.FONT_XTINY, datemonthString, Gfx.TEXT_JUSTIFY_CENTER);
+        	week.weektext(dc,dateInfoShort,dateInfo,142,99,1,App.getApp().getProperty("Week"));
         	}
         		else if (dc.getHeight() == 180) {
-        		dc.drawText(60, 124, Gfx.FONT_XTINY, dateString, Gfx.TEXT_JUSTIFY_CENTER);
-        		dc.drawText(60, 139, Gfx.FONT_XTINY, monthString, Gfx.TEXT_JUSTIFY_CENTER);
+        		week.weektext(dc,dateInfoShort,dateInfo,60,120,2,App.getApp().getProperty("Week"));
         		}
         
         // Battery
@@ -123,7 +125,12 @@ class JSClockView extends Ui.WatchFace {
         var Activity1_type =  App.getApp().getProperty("Activity1");
         if (Activity1_type == 1) {
         activity1_1 = stepinfo;
-        activity1_1_text = "step";
+        	if (App.getApp().getProperty("Goals") == 0) {
+        	activity1_1_text = "step";
+        	}
+        	else if (App.getApp().getProperty("Goals") == 1) {
+        	activity1_1_text ="/" + stepgoal;
+        	}
         }
         	else if (Activity1_type == 2)  {
         	activity1_1 = caloriesinfo;
@@ -131,8 +138,13 @@ class JSClockView extends Ui.WatchFace {
         	}
         		else if (Activity1_type == 3)  {
         			if (dc.getHeight() == 205) {
-        			activity1_1 = floorsClimbed;
-        			activity1_1_text = "floors";
+        				activity1_1 = floorsClimbed;
+        				if (App.getApp().getProperty("Goals") == 0) {
+        				activity1_1_text = "floors";
+        				}
+        				else if (App.getApp().getProperty("Goals") == 1) {
+        				activity1_1_text ="/" + floorsClimbedGoal;
+        				}
         			}
         			else {
         			activity1_1 = "ONLY";
@@ -148,7 +160,12 @@ class JSClockView extends Ui.WatchFace {
         var Activity2_type =  App.getApp().getProperty("Activity2");
         if (Activity2_type == 1) {
         activity2_2 = stepinfo;
-        activity2_2_text = "step";
+        if (App.getApp().getProperty("Goals") == 0) {
+        	activity2_2_text = "step";
+        	}
+        	else if (App.getApp().getProperty("Goals") == 1) {
+        	activity2_2_text ="/" + stepgoal;
+        	}
         }
         	else if (Activity2_type == 2)  {
         	activity2_2 = caloriesinfo;
@@ -157,7 +174,12 @@ class JSClockView extends Ui.WatchFace {
         		else if (Activity2_type == 3)  {
         				if (dc.getHeight() == 205) {
         					activity2_2 = floorsClimbed;
+        					if (App.getApp().getProperty("Goals") == 0) {
         					activity2_2_text = "floors";
+        					}
+        					else if (App.getApp().getProperty("Goals") == 1) {
+        					activity2_2_text ="/" + floorsClimbedGoal;
+        					}
         					}
         				else {
         					activity2_2 = "ONLY";
@@ -167,6 +189,41 @@ class JSClockView extends Ui.WatchFace {
         			else if (Activity2_type == 4)  {
         			activity2_2 = distanceinfo.format("%01d");
         			activity2_2_text = "km";
+        			}
+        			
+         var Activity3_type =  App.getApp().getProperty("Activity3");
+        if (Activity3_type == 2) {
+        activity3_3 = stepinfo;
+        if (App.getApp().getProperty("Goals") == 0) {
+        	activity3_3_text = "step";
+        	}
+        	else if (App.getApp().getProperty("Goals") == 1) {
+        	activity3_3_text ="/" + stepgoal;
+        	}
+        }
+        	else if (Activity3_type == 3)  {
+        	activity3_3 = caloriesinfo;
+        	activity3_3_text = "kCal";
+        	}
+        		else if (Activity3_type == 4)  {
+        				if (dc.getHeight() == 205) {
+        					activity3_3 = floorsClimbed;
+        					activity3_3_text = "floors";
+        					if (App.getApp().getProperty("Goals") == 0) {
+        					activity3_3_text = "floors";
+        					}
+        					else if (App.getApp().getProperty("Goals") == 1) {
+        					activity3_3_text ="/" + floorsClimbedGoal;
+        					}
+        					}
+        				else {
+        					activity3_3 = "ONLY";
+        					activity3_3_text = "Vivoactive HR";
+        					}
+        		}
+        			else if (Activity3_type == 5)  {
+        			activity3_3 = distanceinfo.format("%01d");
+        			activity3_3_text = "km";
         			}
         
         // Steps Calories
@@ -189,6 +246,14 @@ class JSClockView extends Ui.WatchFace {
         		dc.drawText(162, 112, Gfx.FONT_TINY, activity2_2, Gfx.TEXT_JUSTIFY_CENTER);
         		dc.drawText(162, 128, Gfx.FONT_XTINY, activity2_2_text, Gfx.TEXT_JUSTIFY_CENTER);
         		}
+        		
+        //Activity field bottom line
+       
+       if (Activity3_type >= 2)
+       {
+       dc.drawText(dc.getWidth()/2, dc.getHeight()-29, Gfx.FONT_TINY, " " + activity3_3 + " " + activity3_3_text + " ", Gfx.TEXT_JUSTIFY_CENTER);
+       }
+       
         	
 		//Bluetooth
 		if (isConnected) {
