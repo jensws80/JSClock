@@ -21,5 +21,7 @@ The graphics have a yellow color that changes too red when battery under 15%.
 
 1.2 Add settings meny, You can now change color and change the two activity field between kcal, distance, step and floor (floor only Vivoactive HR). 
 
+1.3 Add week number (iso), more colour for you too choose between, Possible to show goals, set color on/off, One more activity field for you too activate.
+
 ## License
 This project is licensed under the terms of the GNU V.3 license.
