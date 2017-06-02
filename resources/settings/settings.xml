@@ -6,6 +6,12 @@
             <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
             <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+             <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+             <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+             <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+             <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
         </settingConfig>
     </setting>
 
@@ -13,10 +19,16 @@
         <settingConfig type="list">
         	<listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
-            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
-            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
-            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+             <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+             <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+             <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+             <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+             
+          
         </settingConfig>
     </setting>
 
@@ -24,32 +36,44 @@
         <settingConfig type="list">
         	<listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
-            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
-            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
             <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+             <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+             <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+             <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+             <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
         </settingConfig>
     </setting>
     
     <setting propertyKey="@Properties.DateColor" title="@Strings.DateColorTitle">
         <settingConfig type="list">
         	<listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
-        	<listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
-            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
-            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
             <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+             <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+             <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+             <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+             <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
         </settingConfig>
     </setting>
     
     <setting propertyKey="@Properties.UpperfieldColor" title="@Strings.UpperfieldColorTitle">
         <settingConfig type="list">
         	<listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
-        	<listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
-            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
-            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
             <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+             <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+             <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+             <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+             <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
         </settingConfig>
     </setting>
     
@@ -57,10 +81,14 @@
         <settingConfig type="list">
         	<listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
             <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
-            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
-            <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
             <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
             <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+             <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+             <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+             <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+             <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
         </settingConfig>
     </setting>
     
@@ -81,6 +109,36 @@
             <listEntry value="4">@Strings.Activitydistance</listEntry>
         </settingConfig>
     </setting>
-  
 
+       <setting propertyKey="@Properties.Activity3" title="@Strings.Activity3Title">
+        <settingConfig type="list">
+        	<listEntry value="1">@Strings.Activityoff</listEntry>
+        	<listEntry value="2">@Strings.Activitystep</listEntry>
+            <listEntry value="3">@Strings.Activitycalories</listEntry>
+            <listEntry value="4">@Strings.Activityfloor</listEntry>
+            <listEntry value="5">@Strings.Activitydistance</listEntry>
+        </settingConfig>
+    </setting>
+
+       <setting propertyKey="@Properties.Week" title="@Strings.Week">
+        <settingConfig type="list">
+        	<listEntry value="0">@Strings.Weekoff</listEntry>
+        	<listEntry value="1">@Strings.Weekon</listEntry>
+        </settingConfig>
+    </setting>
+    
+    <setting propertyKey="@Properties.Goals" title="@Strings.Goals">
+        <settingConfig type="list">
+        	<listEntry value="0">@Strings.Goalsoff</listEntry>
+        	<listEntry value="1">@Strings.Goalson</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.Graphics" title="@Strings.Graphics">
+        <settingConfig type="list">
+        	<listEntry value="0">@Strings.Graphicsoff</listEntry>
+        	<listEntry value="1">@Strings.Graphicson</listEntry>
+        </settingConfig>
+    </setting>
+    
 </settings>

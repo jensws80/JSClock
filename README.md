@@ -11,6 +11,7 @@ The graphics have a yellow color that changes too red when battery under 15%.
 ![alt tag](https://github.com/jensws80/JSClock/blob/master/JSClock.png?raw=true(http://jensws.com/images/JSClock.png))
 ![alt tag](https://github.com/jensws80/JSClock/blob/master/JSClock2.png?raw=true(http://jensws.com/images/JSClock2.png))
 ![alt tag](https://github.com/jensws80/JSClock/blob/master/JSClock3.png?raw=true(http://jensws.com/images/JSClock3.png))
+![alt tag](https://github.com/jensws80/JSClock/blob/master/jsclock4.png?raw=true(http://jensws.com/images/jsclock4.png))
 
 ## Version
 
@@ -19,6 +20,8 @@ The graphics have a yellow color that changes too red when battery under 15%.
 1.1 Add support for more clock. All Rectangle and semi round are supported.
 
 1.2 Add settings meny, You can now change color and change the two activity field between kcal, distance, step and floor (floor only Vivoactive HR). 
+
+1.3 Add week number (iso), more colour for you too choose between, Possible to show goals, set color on/off, One more activity field for you too activate.
 
 ## License
 This project is licensed under the terms of the GNU V.3 license.
