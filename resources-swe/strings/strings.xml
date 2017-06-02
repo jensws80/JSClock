@@ -9,7 +9,10 @@
     <string id="UpperfieldColorTitle">Övre fältets färg</string>
     <string id="Activity1Title">Aktivitets fält övre</string>
     <string id="Activity2Title">Aktivitets fält nedre</string>
-    
+    <string id="Activity3Title">Aktivitets fält över nedre linje</string>
+    <string id="Week">Visa veckonummer</string>
+    <string id="Goals">Visa dina mål</string>
+    <string id="Graphics">Visa Grafik</string>
     
     <string id="ColorBlack">Svart</string>
     <string id="ColorDarkGray">Mörk grå</string>
@@ -18,10 +21,21 @@
     <string id="ColorBlue">Blå</string>
     <string id="ColorRed">Röd</string>
     <string id="ColorYellow">Gul</string>
+    <string id="ColorGreen">Grön</string>
+    <string id="ColorPink">Rosa</string> 
+    <string id="ColorOrange">Orange</string>
+
     
    	<string id="Activitystep">Steg</string>
     <string id="Activitycalories">Kalorier</string>
     <string id="Activityfloor">Trappor</string>
     <string id="Activitydistance">Distans</string>
+    <string id="Activityoff">Av</string>
+    <string id="Weekoff">Vecka Av</string>
+    <string id="Weekon">Vecka På</string>
+    <string id="Goalsoff">Av</string>
+    <string id="Goalson">På</string>
+    <string id="Graphicsoff">Av</string>
+    <string id="Graphicson">På</string>
     
 </strings>
