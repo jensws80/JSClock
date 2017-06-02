@@ -9,7 +9,10 @@
     <string id="UpperfieldColorTitle">Upper field Color</string>
     <string id="Activity1Title">Activity field 1</string>
     <string id="Activity2Title">Activity field 2</string>
-    
+    <string id="Activity3Title">Activity field over bottom line</string>
+    <string id="Week">Show Week number</string>
+    <string id="Goals">Show your Goals</string>
+    <string id="Graphics">Show Graphics</string>
     
     <string id="ColorBlack">Black</string>
     <string id="ColorDarkGray">Dark Gray</string>
@@ -18,10 +21,21 @@
     <string id="ColorBlue">Blue</string>
     <string id="ColorRed">Red</string>
     <string id="ColorYellow">Yellow</string>
+    <string id="ColorGreen">Green</string>
+    <string id="ColorPink">Pink</string> 
+    <string id="ColorOrange">Orange</string>
+ 
     
    	<string id="Activitystep">Step</string>
     <string id="Activitycalories">Calories</string>
     <string id="Activityfloor">Floor</string>
     <string id="Activitydistance">Distance</string>
+    <string id="Activityoff">Off</string>
+    <string id="Weekoff">Week Off</string>
+    <string id="Weekon">Week On</string>
+    <string id="Goalsoff">Off</string>
+    <string id="Goalson">On</string>
+    <string id="Graphicsoff">Off</string>
+    <string id="Graphicson">On</string>
     
-</strings
+</strings>
