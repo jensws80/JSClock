@@ -7,6 +7,8 @@
     <string id="GraphicsColorTitle">Grafik färg</string>
     <string id="TimeColorTitle">Tid färg</string>
     <string id="UpperfieldColorTitle">Övre fältets färg</string>
+    <string id="AlarmColorTitle">Alarm färg</string>
+    <string id="AlarmTitle">Batteri Alarm nivå </string>
     <string id="Activity1Title">Aktivitets fält övre</string>
     <string id="Activity2Title">Aktivitets fält nedre</string>
     <string id="Activity3Title">Aktivitets fält över nedre linje</string>
@@ -24,6 +26,7 @@
     <string id="ColorGreen">Grön</string>
     <string id="ColorPink">Rosa</string> 
     <string id="ColorOrange">Orange</string>
+    <string id="ColorLightGreen">Ljus Grön</string>
 
     
    	<string id="Activitystep">Steg</string>
