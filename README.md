@@ -7,7 +7,7 @@ You can change colour, change activity field and a lot more in app settings.
 
 <A HREF="https://apps.garmin.com/en-US/apps/26f04fcd-61e4-43df-997b-8df2dc19c9c9">https://apps.garmin.com/en-US/apps/26f04fcd-61e4-43df-997b-8df2dc19c9c9</A>
 
-
+![alt tag](https://github.com/jensws80/JSClock/blob/master/JSClock_cover_400440.png?raw=true(http://jensws.com/images/JSClock_cover_400400.png))
 ![alt tag](https://github.com/jensws80/JSClock/blob/master/JSClock.png?raw=true(http://jensws.com/images/JSClock.png))
 ![alt tag](https://github.com/jensws80/JSClock/blob/master/JSClock2.png?raw=true(http://jensws.com/images/JSClock2.png))
 ![alt tag](https://github.com/jensws80/JSClock/blob/master/JSClock3.png?raw=true(http://jensws.com/images/JSClock3.png))
@@ -23,6 +23,8 @@ You can change colour, change activity field and a lot more in app settings.
 1.3 Add week number (iso), more colour for you too choose between, Possible to show goals, set color on/off, One more activity field for you too activate.
 
 1.4 Graphics change and distance show in 0.0
+
+1.5 Add probability in settings for alarm colour and level when low battery activates.
 
 ## License
 This project is licensed under the terms of the GNU V.3 license.

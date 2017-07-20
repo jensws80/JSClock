@@ -55,8 +55,8 @@ class JSClockView extends Ui.WatchFace {
 	dc.fillRectangle(0,0,dc.getWidth(), dc.getHeight());
 	dc.setColor(App.getApp().getProperty("GraphicsColor"),App.getApp().getProperty("BackgroundColor"));
     
-    if (Sys.getSystemStats().battery< 20) {
-        dc.setColor(Gfx.COLOR_RED,App.getApp().getProperty("BackgroundColor"));
+    if (Sys.getSystemStats().battery < App.getApp().getProperty("Alarm")) {
+        dc.setColor(App.getApp().getProperty("AlarmColor"),App.getApp().getProperty("BackgroundColor"));
     }
     
     if (App.getApp().getProperty("Graphics") == 1) {
@@ -117,8 +117,8 @@ class JSClockView extends Ui.WatchFace {
   	// Battery
   	dc.setColor(App.getApp().getProperty("UpperfieldColor"),App.getApp().getProperty("BackgroundColor"));
         
-  	if (Sys.getSystemStats().battery< 20) {
-        dc.setColor(Gfx.COLOR_RED,Gfx.COLOR_BLACK);
+  	if (Sys.getSystemStats().battery< App.getApp().getProperty("Alarm")) {
+        dc.setColor(App.getApp().getProperty("AlarmColor"),App.getApp().getProperty("BackgroundColor"));
    	}
   	dc.drawText(dc.getWidth()/2, 1, Gfx.FONT_XTINY, batteryinfo, Gfx.TEXT_JUSTIFY_CENTER);
         

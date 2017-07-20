@@ -12,6 +12,7 @@
              <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
              <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
              <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+             <listEntry value="0xAAFF00">@Strings.ColorLightGreen</listEntry>
         </settingConfig>
     </setting>
 
@@ -27,6 +28,7 @@
              <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
              <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
              <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+             <listEntry value="0xAAFF00">@Strings.ColorLightGreen</listEntry>
              
           
         </settingConfig>
@@ -44,6 +46,7 @@
              <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
              <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
              <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+             <listEntry value="0xAAFF00">@Strings.ColorLightGreen</listEntry>
         </settingConfig>
     </setting>
     
@@ -59,6 +62,7 @@
              <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
              <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
              <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+             <listEntry value="0xAAFF00">@Strings.ColorLightGreen</listEntry>
         </settingConfig>
     </setting>
     
@@ -74,6 +78,7 @@
              <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
              <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
              <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+             <listEntry value="0xAAFF00">@Strings.ColorLightGreen</listEntry>
         </settingConfig>
     </setting>
     
@@ -89,7 +94,28 @@
              <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
              <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
              <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+             <listEntry value="0xAAFF00">@Strings.ColorLightGreen</listEntry>
         </settingConfig>
+    </setting>
+    
+    <setting propertyKey="@Properties.AlarmColor" title="@Strings.AlarmColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+            <listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+            <listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+             <listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+             <listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+             <listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+             <listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+             <listEntry value="0xAAFF00">@Strings.ColorLightGreen</listEntry>
+        </settingConfig>
+    </setting>
+    
+    <setting propertyKey="@Properties.Alarm" title="@Strings.AlarmTitle">
+        <settingConfig type="Numeric" min="0" max="100"/>
     </setting>
     
      <setting propertyKey="@Properties.Activity1" title="@Strings.Activity1Title">
@@ -140,5 +166,5 @@
         	<listEntry value="1">@Strings.Graphicson</listEntry>
         </settingConfig>
     </setting>
-    
+ 
 </settings>
