@@ -7,6 +7,8 @@
     <string id="GraphicsColorTitle">Graphics Color</string>
     <string id="TimeColorTitle">Time Color</string>
     <string id="UpperfieldColorTitle">Upper field Color</string>
+    <string id="AlarmColorTitle">Alarm Color</string>
+    <string id="AlarmTitle">Battery Alarm level </string>
     <string id="Activity1Title">Activity field 1</string>
     <string id="Activity2Title">Activity field 2</string>
     <string id="Activity3Title">Activity field over bottom line</string>
@@ -24,6 +26,7 @@
     <string id="ColorGreen">Green</string>
     <string id="ColorPink">Pink</string> 
     <string id="ColorOrange">Orange</string>
+    <string id="ColorLightGreen">Light Green</string>
        
    	<string id="Activitystep">Step</string>
     <string id="Activitycalories">Calories</string>
