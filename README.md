@@ -8,6 +8,8 @@ You can change colour, change activity field and a lot more in app settings.
 <A HREF="https://apps.garmin.com/en-US/apps/26f04fcd-61e4-43df-997b-8df2dc19c9c9">https://apps.garmin.com/en-US/apps/26f04fcd-61e4-43df-997b-8df2dc19c9c9</A>
 
 ![alt tag](https://github.com/jensws80/JSClock/blob/master/jsclock_cover_400400.jpg?raw=true(http://jensws.com/images/jsclock_cover_400400.jpg))
+
+
 ![alt tag](https://github.com/jensws80/JSClock/blob/master/JSClock.png?raw=true(http://jensws.com/images/JSClock.png))
 ![alt tag](https://github.com/jensws80/JSClock/blob/master/JSClock2.png?raw=true(http://jensws.com/images/JSClock2.png))
 ![alt tag](https://github.com/jensws80/JSClock/blob/master/JSClock3.png?raw=true(http://jensws.com/images/JSClock3.png))
