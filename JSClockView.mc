@@ -34,10 +34,10 @@ class JSClockView extends Ui.WatchFace {
     var hours = clockTime.hour;
     var activity1_1 = {}; 
     var activity1_1_text = {};
-    activity1_1_arc = {};  
+    var activity1_1_arc = {};  
     var activity2_2 = {}; 
     var activity2_2_text = {};
-    activity2_2_arc = {};
+    var activity2_2_arc = {};
     var activity3_3 = {}; 
     var activity3_3_text = {};
     var floorsClimbed = {};
@@ -146,40 +146,40 @@ class JSClockView extends Ui.WatchFace {
         activity2_2 = stepinfo;
         if (App.getApp().getProperty("Goals") == 0) {
         	activity2_2_text = "step";
-        	activity1_1_arc = 90;
+        	activity2_2_arc = 90;
         	}
         	else if (App.getApp().getProperty("Goals") == 1) {
         	activity2_2_text ="/" + stepgoal;
-        	activity1_1_arc = 90;
+        	activity2_2_arc = 90;
         	}
         }
         	else if (Activity2_type == 2)  {
         	activity2_2 = caloriesinfo;
         	activity2_2_text = "kCal";
-        	activity1_1_arc = 90;
+        	activity2_2_arc = 90;
         	}
         		else if (Activity2_type == 3)  {
         				if (dc.getHeight() == 205){
         					activity2_2 = floorsClimbed;
         					if (App.getApp().getProperty("Goals") == 0) {
         					activity2_2_text = "floors";
-        					activity1_1_arc = 90;
+        					activity2_2_arc = 90;
         					}
         					else if (App.getApp().getProperty("Goals") == 1) {
         					activity2_2_text ="/" + floorsClimbedGoal;
-        					activity1_1_arc = 90;
+        					activity2_2_arc = 90;
         					}
         					}
         				else {
         					activity2_2 = "NO";
         					activity2_2_text = "SUPPORT";
-        					activity1_1_arc = 90;
+        					activity2_2_arc = 90;
         					}
         		}
         			else if (Activity2_type == 4)  {
         			activity2_2 = distanceinfo.format("%0.01f");
         			activity2_2_text = "km";
-        			activity1_1_arc = 90;
+        			activity2_2_arc = 90;
         			}
         			
          var Activity3_type =  App.getApp().getProperty("Activity3");
