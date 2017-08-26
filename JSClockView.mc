@@ -33,9 +33,11 @@ class JSClockView extends Ui.WatchFace {
     var not = Lang.format("$1$", [Sys.getDeviceSettings().notificationCount]);
     var hours = clockTime.hour;
     var activity1_1 = {}; 
-    var activity1_1_text = {}; 
+    var activity1_1_text = {};
+    activity1_1_arc = {};  
     var activity2_2 = {}; 
     var activity2_2_text = {};
+    activity2_2_arc = {};
     var activity3_3 = {}; 
     var activity3_3_text = {};
     var floorsClimbed = {};
@@ -53,33 +55,7 @@ class JSClockView extends Ui.WatchFace {
     dc.clear();
     dc.setColor(App.getApp().getProperty("BackgroundColor"), App.getApp().getProperty("BackgroundColor"));
 	dc.fillRectangle(0,0,dc.getWidth(), dc.getHeight());
-	dc.setColor(App.getApp().getProperty("GraphicsColor"),App.getApp().getProperty("BackgroundColor"));
-    
-    if (Sys.getSystemStats().battery < App.getApp().getProperty("Alarm")) {
-        dc.setColor(App.getApp().getProperty("AlarmColor"),App.getApp().getProperty("BackgroundColor"));
-    }
-    
-    if (App.getApp().getProperty("Graphics") == 1) {
-        dc.setPenWidth(4);
-        dc.drawLine(1, dc.getHeight()-17, dc.getWidth(), dc.getHeight()-17);
-               
-        if (dc.getHeight() == 205) {
-        	dc.setPenWidth(4);
-        	dc.drawCircle(dc.getWidth()-38, 65, 30);
-        	dc.drawCircle(dc.getWidth()-38, 140, 30);
-        }
-        else if (dc.getHeight() == 148) {
-        	dc.setPenWidth(3);
-        	dc.drawCircle(dc.getWidth()-33, 87, 30);
-        	dc.drawCircle(dc.getWidth()-101, 87, 30);
-        }
-        else if (dc.getHeight() == 180) {
-        	dc.setPenWidth(4);
-        	dc.drawCircle(dc.getWidth()-55, 55, 30);
-        	dc.drawCircle(dc.getWidth()-55, 122, 30);
-        }
-     }
-        		
+	
    	// Time
   	dc.setColor(App.getApp().getProperty("TimeColor"),App.getApp().getProperty("BackgroundColor"));
         if (!Sys.getDeviceSettings().is24Hour) {
@@ -129,33 +105,40 @@ class JSClockView extends Ui.WatchFace {
      	activity1_1 = stepinfo;
   		if (App.getApp().getProperty("Goals") == 0) {
      		activity1_1_text = "step";
+     		activity1_1_arc = 90;
       	}
         else if (App.getApp().getProperty("Goals") == 1) {
         	activity1_1_text ="/" + stepgoal;
+        	activity1_1_arc = 90;
         }
   	}
    	else if (Activity1_type == 2)  {
         activity1_1 = caloriesinfo;
         activity1_1_text = "kCal";
+        activity1_1_arc = 90;
   	}
   	else if (Activity1_type == 3)  {
        	if (dc.getHeight() == 205 ) {
         	activity1_1 = floorsClimbed;
         		if (App.getApp().getProperty("Goals") == 0) {
         			activity1_1_text = "floors";
+        			activity1_1_arc = 90;
         		}
         		else if (App.getApp().getProperty("Goals") == 1) {
         			activity1_1_text ="/" + floorsClimbedGoal;
+        			activity1_1_arc = 90;
         		}
-        }
+    }
  	else {
     	activity1_1 = "NO";
         activity1_1_text = "NO SUPPORT";
+        activity1_1_arc = 90;
     }      			
     }
         			else if (Activity1_type == 4)  {
         			activity1_1 = distanceinfo.format("%0.01f");
         			activity1_1_text = "km";
+        			activity1_1_arc = 90;
         			}
         
         var Activity2_type =  App.getApp().getProperty("Activity2");
@@ -163,33 +146,40 @@ class JSClockView extends Ui.WatchFace {
         activity2_2 = stepinfo;
         if (App.getApp().getProperty("Goals") == 0) {
         	activity2_2_text = "step";
+        	activity1_1_arc = 90;
         	}
         	else if (App.getApp().getProperty("Goals") == 1) {
         	activity2_2_text ="/" + stepgoal;
+        	activity1_1_arc = 90;
         	}
         }
         	else if (Activity2_type == 2)  {
         	activity2_2 = caloriesinfo;
         	activity2_2_text = "kCal";
+        	activity1_1_arc = 90;
         	}
         		else if (Activity2_type == 3)  {
         				if (dc.getHeight() == 205){
         					activity2_2 = floorsClimbed;
         					if (App.getApp().getProperty("Goals") == 0) {
         					activity2_2_text = "floors";
+        					activity1_1_arc = 90;
         					}
         					else if (App.getApp().getProperty("Goals") == 1) {
         					activity2_2_text ="/" + floorsClimbedGoal;
+        					activity1_1_arc = 90;
         					}
         					}
         				else {
         					activity2_2 = "NO";
         					activity2_2_text = "SUPPORT";
+        					activity1_1_arc = 90;
         					}
         		}
         			else if (Activity2_type == 4)  {
         			activity2_2 = distanceinfo.format("%0.01f");
         			activity2_2_text = "km";
+        			activity1_1_arc = 90;
         			}
         			
          var Activity3_type =  App.getApp().getProperty("Activity3");
@@ -229,7 +219,6 @@ class JSClockView extends Ui.WatchFace {
         
 	// Steps Calories
    	dc.setColor(App.getApp().getProperty("ActivityColor"),	Gfx.COLOR_TRANSPARENT);
-   	//App.getApp().getProperty("BackgroundColor"));
    
     if (dc.getHeight() == 205) {
        	dc.drawText(110, 50, Gfx.FONT_TINY, activity1_1, Gfx.TEXT_JUSTIFY_CENTER);
@@ -256,7 +245,35 @@ class JSClockView extends Ui.WatchFace {
        {
        dc.drawText(dc.getWidth()/2, dc.getHeight()-29, Gfx.FONT_TINY, " " + activity3_3 + " " + activity3_3_text + " ", Gfx.TEXT_JUSTIFY_CENTER);
   	}
-       
+    //Graphics
+    dc.setColor(App.getApp().getProperty("GraphicsColor"),App.getApp().getProperty("BackgroundColor"));
+    
+    if (Sys.getSystemStats().battery < App.getApp().getProperty("Alarm")) {
+        dc.setColor(App.getApp().getProperty("AlarmColor"),App.getApp().getProperty("BackgroundColor"));
+    }
+    
+    if (App.getApp().getProperty("Graphics") == 1) {
+        dc.setPenWidth(4);
+        dc.drawLine(1, dc.getHeight()-17, dc.getWidth(), dc.getHeight()-17);
+               
+        if (dc.getHeight() == 205) {
+        	dc.setPenWidth(4);
+        	//dc.drawCircle(dc.getWidth()-38, 65, 30);
+        	dc.drawArc(dc.getWidth()-38, 65, 30, 1, 90, activity1_1_arc);
+        	//dc.drawCircle(dc.getWidth()-38, 140, 30);
+        	dc.drawArc(dc.getWidth()-38, 140, 30, 1, 90, activity2_2_arc);
+        }
+        else if (dc.getHeight() == 148) {
+        	dc.setPenWidth(3);
+        	dc.drawCircle(dc.getWidth()-33, 87, 30);
+        	dc.drawCircle(dc.getWidth()-101, 87, 30);
+        }
+        else if (dc.getHeight() == 180) {
+        	dc.setPenWidth(4);
+        	dc.drawCircle(dc.getWidth()-55, 55, 30);
+        	dc.drawCircle(dc.getWidth()-55, 122, 30);
+        }
+     }   
   	//Bluetooth
 	if (isConnected) {
 		dc.setColor(App.getApp().getProperty("UpperfieldColor"),App.getApp().getProperty("BackgroundColor"));
