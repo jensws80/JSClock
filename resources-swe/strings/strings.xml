@@ -27,6 +27,11 @@
     <string id="ColorPink">Rosa</string> 
     <string id="ColorOrange">Orange</string>
     <string id="ColorLightGreen">Ljus Grön</string>
+    <string id="ColorLightBlue">Ljus Blå</string>
+    <string id="ColorDarkRed">Mörk Röd</string>
+    <string id="ColorDarkGreen">Mörk Grön</string>
+    <string id="ColorPurple">Lila</string>
+       
 
     
    	<string id="Activitystep">Steg</string>

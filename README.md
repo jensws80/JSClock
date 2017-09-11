@@ -28,5 +28,7 @@ You can change colour, change activity field and a lot more in app settings.
 
 1.5 Add probability in settings for alarm colour and level when low battery activates.
 
+1.6 Add all 16 colour supported by all clock and graphics change.
+
 ## License
 This project is licensed under the terms of the GNU V.3 license.

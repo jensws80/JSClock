@@ -27,6 +27,10 @@
     <string id="ColorPink">Pink</string> 
     <string id="ColorOrange">Orange</string>
     <string id="ColorLightGreen">Light Green</string>
+    <string id="ColorLightBlue">Light Blue</string>
+    <string id="ColorDarkRed">Dark Red</string>
+    <string id="ColorDarkGreen">Dark Green</string>
+    <string id="ColorPurple">Purple</string>
        
    	<string id="Activitystep">Step</string>
     <string id="Activitycalories">Calories</string>
