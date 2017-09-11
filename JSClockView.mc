@@ -101,7 +101,14 @@ class JSClockView extends Ui.WatchFace {
   	dc.drawText(dc.getWidth()/2, 1, Gfx.FONT_XTINY, batteryinfo, Gfx.TEXT_JUSTIFY_CENTER);
     
     // Step goal arc calculation
-    steparc = (stepinfo.toFloat() / stepgoal.toFloat())*360.0;
+    if (stepinfo.toFloat() < stepgoal.toFloat())
+    	{
+    	steparc = (stepinfo.toFloat() / stepgoal.toFloat())*360.0;
+    	}
+    else 
+    	{
+    	steparc = 360.0;
+    	}
     
     //Floor goal arc calculation
     if (dc.getHeight() == 205 ) {
@@ -208,7 +215,6 @@ class JSClockView extends Ui.WatchFace {
         		else if (Activity3_type == 4)  {
         				if (dc.getHeight() == 205){
         					activity3_3 = floorsClimbed;
-        					activity3_3_text = "floors";
         					if (App.getApp().getProperty("Goals") == 0) {
         					activity3_3_text = "floors";
         					}
