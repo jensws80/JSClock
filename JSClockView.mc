@@ -44,16 +44,29 @@ class JSClockView extends Ui.WatchFace {
     var floorsClimbed = {};
     var floorsClimbedGoal = {};
     var floorsClimbedarc = {};
+    var heart_rate = {};
     	
     if (dc.getHeight() == 205) {
     	floorsClimbed = Lang.format("$1$", [act.floorsClimbed]);
     	floorsClimbedGoal = Lang.format("$1$", [act.floorsClimbedGoal]);
     }
+    
+   // Heartrate
+    
+    var hrHistory = Act.getHeartRateHistory(null, true);
+    	if(hrHistory != null){
+        var hr = hrHistory.next();
+		heart_rate = hr.heartRate;
+    	}
+    	else { 
+    	heart_rate = 0;
+    	}
     		
     // Graphics
     // vivoactive HR 148 x 205
     // forerunner 215 x 180
     // vivoactive forerunner epix 205 x 148
+    // vivoactive 3 240 x 240
     dc.clear();
     dc.setColor(App.getApp().getProperty("BackgroundColor"), App.getApp().getProperty("BackgroundColor"));
 	dc.fillRectangle(0,0,dc.getWidth(), dc.getHeight());
@@ -125,7 +138,8 @@ class JSClockView extends Ui.WatchFace {
       	}
         else if (App.getApp().getProperty("Goals") == 1) {
         	activity1_1_text ="/" + stepgoal;
-        	activity1_1_arc = steparc.toLong();
+        	activity1_1_arc = 360;
+        	//activity1_1_arc = steparc.toLong();
         }
   	}
    	else if (Activity1_type == 2)  {
@@ -142,7 +156,8 @@ class JSClockView extends Ui.WatchFace {
         		}
         		else if (App.getApp().getProperty("Goals") == 1) {
         			activity1_1_text ="/" + floorsClimbedGoal;
-        			activity1_1_arc = floorsClimbedarc.toLong();
+        			activity1_1_arc = 360;
+        			//activity1_1_arc = floorsClimbedarc.toLong();
         		}
     }
  		else {
@@ -153,10 +168,22 @@ class JSClockView extends Ui.WatchFace {
     }
         			else if (Activity1_type == 4)  {
         			activity1_1 = distanceinfo.format("%0.01f");
-        			activity1_1_text = "km";
+        			    if (Sys.getDeviceSettings().distanceUnits == 0) {
+        				activity1_1_text = "km";
+        				}
+        				else if (Sys.getDeviceSettings().distanceUnits == 1) {
+        				activity1_1_text = "mi";
+        				}
+        				else {
+        				activity1_1_text = "xx";
+        				}
         			activity1_1_arc = 360;
         			}
-        
+       	else if (Activity1_type == 5)  {
+       		activity1_1 = heart_rate;
+        	activity1_1_text = "bpm";
+        	activity1_1_arc = 360;
+        	}
         var Activity2_type =  App.getApp().getProperty("Activity2");
         if (Activity2_type == 1) {
         activity2_2 = stepinfo;
@@ -166,7 +193,8 @@ class JSClockView extends Ui.WatchFace {
         	}
         	else if (App.getApp().getProperty("Goals") == 1) {
         	activity2_2_text ="/" + stepgoal;
-        	activity2_2_arc = steparc.toLong();
+        	activity2_2_arc = 360;
+        	//activity2_2_arc = steparc.toLong();
         	}
         }
         	else if (Activity2_type == 2)  {
@@ -183,7 +211,8 @@ class JSClockView extends Ui.WatchFace {
         					}
         					else if (App.getApp().getProperty("Goals") == 1) {
         					activity2_2_text ="/" + floorsClimbedGoal;
-        					activity2_2_arc = floorsClimbedarc.toLong();
+        					activity2_2_arc = 360;
+        					//activity2_2_arc = floorsClimbedarc.toLong();
         					}
         					}
         				else {
@@ -194,9 +223,22 @@ class JSClockView extends Ui.WatchFace {
         		}
         			else if (Activity2_type == 4)  {
         			activity2_2 = distanceinfo.format("%0.01f");
-        			activity2_2_text = "km";
+        				if (Sys.getDeviceSettings().distanceUnits == 0){
+        				activity2_2_text = "km";
+        				}
+        				else if (Sys.getDeviceSettings().distanceUnits == 1){
+        				activity2_2_text = "mi";
+        				}
+        				else {
+        				activity2_2_text = "xx";
+        				}
         			activity2_2_arc = 360;
         			}
+        		else if (Activity2_type == 5)  {
+       			activity2_2 = heart_rate;
+        		activity2_2_text = "bpm";
+        		activity2_2_arc = 360;
+        		}
         			
          var Activity3_type =  App.getApp().getProperty("Activity3");
         if (Activity3_type == 2) {
@@ -229,8 +271,20 @@ class JSClockView extends Ui.WatchFace {
         		}
         			else if (Activity3_type == 5)  {
         			activity3_3 = distanceinfo.format("%0.01f");
-        			activity3_3_text = "km";
+        			if (Sys.getDeviceSettings().distanceUnits == 0){
+        				activity3_3_text = "km";
+        				}
+        				else if (Sys.getDeviceSettings().distanceUnits == 1){
+        				activity3_3_text = "mi";
+        				}
+        				else {
+        				activity3_3_text = "xx";
+        				}
         			}
+        		else if (Activity3_type == 6)  {
+       			activity3_3 = heart_rate;
+        		activity3_3_text = "bpm";
+        		}
         
 	// Steps Calories
    	dc.setColor(App.getApp().getProperty("ActivityColor"),	Gfx.COLOR_TRANSPARENT);
@@ -262,7 +316,6 @@ class JSClockView extends Ui.WatchFace {
     }
     
     if (App.getApp().getProperty("Graphics") == 1) {
-        dc.setPenWidth(4);
         dc.drawLine(1, dc.getHeight()-17, dc.getWidth(), dc.getHeight()-17);
                
         if (dc.getHeight() == 205) {
@@ -287,6 +340,7 @@ class JSClockView extends Ui.WatchFace {
   	if (Activity3_type >= 2)
        {
        dc.drawText(dc.getWidth()/2, dc.getHeight()-29, Gfx.FONT_TINY, " " + activity3_3 + " " + activity3_3_text + " ", Gfx.TEXT_JUSTIFY_CENTER);
+       //dc.drawText(dc.getWidth()/2, dc.getHeight()-29, Gfx.FONT_TINY, " " + heart_rate + " " + activity3_3_text + " ", Gfx.TEXT_JUSTIFY_CENTER);
   	}
   	   
   	//Bluetooth
