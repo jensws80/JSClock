@@ -32,7 +32,7 @@ You can change colour, change activity field and a lot more in app settings.
 
 1.7 Bug Fix
 
-1.8 Removed graphics arc, 
+1.8 Removed graphics arc, possible to choose miles, heart rate and support for Vivoactive 3 
 
 ## License
 This project is licensed under the terms of the GNU V.3 license.
