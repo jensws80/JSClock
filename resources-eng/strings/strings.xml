@@ -1,50 +1,50 @@
 <strings>
     <string id="AppName">JSClock</string>
     
-    <string id="ActivityColorTitle">Aktivitets färg</string>
-    <string id="BackgroundColorTitle">Bakgrunds färg</string>
-    <string id="DateColorTitle">Datum färg</string>
-    <string id="GraphicsColorTitle">Grafik färg</string>
-    <string id="TimeColorTitle">Tid färg</string>
-    <string id="UpperfieldColorTitle">Övre fältets färg</string>
-    <string id="AlarmColorTitle">Alarm färg</string>
-    <string id="AlarmTitle">Batteri Alarm nivå </string>
-    <string id="Activity1Title">Aktivitets fält övre</string>
-    <string id="Activity2Title">Aktivitets fält nedre</string>
-    <string id="Activity3Title">Aktivitets fält över nedre linje</string>
-    <string id="Week">Visa veckonummer</string>
-    <string id="Goals">Visa dina mål</string>
-    <string id="Graphics">Visa Grafik</string>
+    <string id="ActivityColorTitle">Activity Color</string>
+    <string id="BackgroundColorTitle">Background Color</string>
+    <string id="DateColorTitle">Date Color</string>
+    <string id="GraphicsColorTitle">Graphics Color</string>
+    <string id="TimeColorTitle">Time Color</string>
+    <string id="UpperfieldColorTitle">Upper field Color</string>
+    <string id="AlarmColorTitle">Alarm Color</string>
+    <string id="AlarmTitle">Battery Alarm level </string>
+    <string id="Activity1Title">Activity field 1</string>
+    <string id="Activity2Title">Activity field 2</string>
+    <string id="Activity3Title">Activity field over bottom line</string>
+    <string id="Week">Show Week number</string>
+    <string id="Goals">Show your Goals</string>
+    <string id="Graphics">Show Graphics</string>
     
-    <string id="ColorBlack">Svart</string>
-    <string id="ColorDarkGray">Mörk grå</string>
-    <string id="ColorLightGray">Ljus grå</string>
-    <string id="ColorWhite">Vit</string>
-    <string id="ColorBlue">Blå</string>
-    <string id="ColorRed">Röd</string>
-    <string id="ColorYellow">Gul</string>
-    <string id="ColorGreen">Grön</string>
-    <string id="ColorPink">Rosa</string> 
+    <string id="ColorBlack">Black</string>
+    <string id="ColorDarkGray">Dark Gray</string>
+    <string id="ColorLightGray">Light Gray</string>
+    <string id="ColorWhite">White</string>
+    <string id="ColorBlue">Blue</string>
+    <string id="ColorRed">Red</string>
+    <string id="ColorYellow">Yellow</string>
+    <string id="ColorGreen">Green</string>
+    <string id="ColorPink">Pink</string> 
     <string id="ColorOrange">Orange</string>
-    <string id="ColorLightGreen">Ljus Grön</string>
-    <string id="ColorLightBlue">Ljus Blå</string>
-    <string id="ColorDarkRed">Mörk Röd</string>
-    <string id="ColorDarkGreen">Mörk Grön</string>
-    <string id="ColorPurple">Lila</string>
+    <string id="ColorLightGreen">Light Green</string>
+    <string id="ColorLightBlue">Light Blue</string>
+    <string id="ColorDarkRed">Dark Red</string>
+    <string id="ColorDarkGreen">Dark Green</string>
+    <string id="ColorPurple">Purple</string>
        
-
+ 
     
-   	<string id="Activitystep">Steg</string>
-    <string id="Activitycalories">Kalorier</string>
-    <string id="Activityfloor">Trappor</string>
-    <string id="Activitydistance">Distans</string>
-    <string id="Activityoff">Av</string>
-    <string id="ActivityHeartRate">Puls</string>
-    <string id="Weekoff">Vecka Av</string>
-    <string id="Weekon">Vecka På</string>
-    <string id="Goalsoff">Av</string>
-    <string id="Goalson">På</string>
-    <string id="Graphicsoff">Av</string>
-    <string id="Graphicson">På</string>
+   	<string id="Activitystep">Step</string>
+    <string id="Activitycalories">Calories</string>
+    <string id="Activityfloor">Floor</string>
+    <string id="Activitydistance">Distance</string>
+    <string id="Activityoff">Off</string>
+    <string id="ActivityHeartRate">HeartRate</string>
+    <string id="Weekoff">Week Off</string>
+    <string id="Weekon">Week On</string>
+    <string id="Goalsoff">Off</string>
+    <string id="Goalson">On</string>
+    <string id="Graphicsoff">Off</string>
+    <string id="Graphicson">On</string>
     
 </strings>
