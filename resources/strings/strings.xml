@@ -37,6 +37,7 @@
     <string id="Activityfloor">Floor</string>
     <string id="Activitydistance">Distance</string>
     <string id="Activityoff">Off</string>
+    <string id="ActivityHeartRate">HeartRate</string>
     <string id="Weekoff">Off</string>
     <string id="Weekon">On</string>
     <string id="Goalsoff">Off</string>
