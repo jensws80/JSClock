@@ -32,5 +32,7 @@ You can change colour, change activity field and a lot more in app settings.
 
 1.7 Bug Fix
 
+1.8 Removed graphics arc, possible to choose miles, heart rate and sleep mode
+
 ## License
 This project is licensed under the terms of the GNU V.3 license.
