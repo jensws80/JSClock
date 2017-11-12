@@ -174,7 +174,7 @@
         	<listEntry value="1">@Strings.Weekon</listEntry>
         </settingConfig>
     </setting>
-    
+        
     <setting propertyKey="@Properties.Goals" title="@Strings.Goals">
         <settingConfig type="list">
         	<listEntry value="0">@Strings.Goalsoff</listEntry>
@@ -188,5 +188,12 @@
         	<listEntry value="1">@Strings.Graphicson</listEntry>
         </settingConfig>
     </setting>
+    <setting propertyKey="@Properties.Sleepmode" title="@Strings.Sleepmode">
+        <settingConfig type="list">
+        	<listEntry value="0">@Strings.Sleepoff</listEntry>
+        	<listEntry value="1">@Strings.Sleepon</listEntry>
+        </settingConfig>
+    </setting>
+  
  
 </settings>
