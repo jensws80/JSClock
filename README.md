@@ -1,4 +1,4 @@
-# JSClock
+## JSClock
 Garmin Watch Face for Vivoactive HR
 
 A digital version of Garmin watch face. This clockface show clock, date, week, kcal, step, your goals, floor (only Vivoactive HR), connection to phone, battery status and message.
