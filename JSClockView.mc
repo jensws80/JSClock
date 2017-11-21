@@ -14,7 +14,6 @@ using Toybox.ActivityMonitor as Act;
 using Toybox.Application as App;
 
 class JSClockView extends Ui.WatchFace {
-	hidden var active = true;
 
     function initialize() {
         WatchFace.initialize();
@@ -53,13 +52,14 @@ class JSClockView extends Ui.WatchFace {
     var Activity1_type =  App.getApp().getProperty("Activity1");
    	var Activity2_type =  App.getApp().getProperty("Activity2");
     var Activity3_type =  App.getApp().getProperty("Activity3");
-        	
-    if (dc.getHeight() == 205 || dc.getHeight() == 240) {
-    	floorsClimbed = Lang.format("$1$", [act.floorsClimbed]);
-    	floorsClimbedGoal = Lang.format("$1$", [act.floorsClimbedGoal]);
-    }
     
-    //Heartrate
+    //FloorClimbed on clock
+    if (Toybox.ActivityMonitor.getInfo() has :floorsClimbed) {
+       	floorsClimbed = Lang.format("$1$", [act.floorsClimbed]);
+  		floorsClimbedGoal = Lang.format("$1$", [act.floorsClimbedGoal]);
+       }    	
+    
+    //Heartrate initiate
     	if (Activity1_type == 5 or Activity2_type == 5 or Activity3_type == 6){
     	if(ActivityMonitor has :HeartRateIterator) {
     	var hrHistory = Act.getHeartRateHistory(null, true);
@@ -72,6 +72,9 @@ class JSClockView extends Ui.WatchFace {
     		heart_rate = 0;
     		}
     	}
+    	else { 
+    		heart_rate = "No Supp.";
+    		}
     	}
     			
     // Step goal arc calculation (not in use only in 1.6)
@@ -87,8 +90,9 @@ class JSClockView extends Ui.WatchFace {
     //Floor goal arc calculation (not in use only in 1.6) 
     if (dc.getHeight() == 205 ) {
     	floorsClimbedarc = (floorsClimbed.toFloat() / floorsClimbedGoal.toFloat())*360.0;
-    	}      
-  	//Set Activity field  
+    	}
+    	      
+  	//Set Activity field 1  
   	if (Activity1_type == 1) {
      	activity1_1 = stepinfo;
   		if (App.getApp().getProperty("Goals") == 0) {
@@ -107,7 +111,8 @@ class JSClockView extends Ui.WatchFace {
         activity1_1_arc = 360;
   	}
   	else if (Activity1_type == 3)  {
-       	if (dc.getHeight() == 205 || 240) {
+       	//if (dc.getHeight() == 205 or 240) {
+       	if (Toybox.ActivityMonitor.getInfo() has :floorsClimbed) {
         	activity1_1 = floorsClimbed;
         		if (App.getApp().getProperty("Goals") == 0) {
         			activity1_1_text = "floors";
@@ -120,8 +125,8 @@ class JSClockView extends Ui.WatchFace {
         		}
     }
  		else {
-    		activity1_1 = "NO";
-        	activity1_1_text = "NO SUPPORT";
+    		activity1_1 = "No";
+        	activity1_1_text = "Supp.";
         	activity1_1_arc = 360;
     }      			
     }
@@ -144,6 +149,7 @@ class JSClockView extends Ui.WatchFace {
         	activity1_1_arc = 360;
         	}
 
+  	//Set Activity field 2
         if (Activity2_type == 1) {
         activity2_2 = stepinfo;
         if (App.getApp().getProperty("Goals") == 0) {
@@ -162,7 +168,7 @@ class JSClockView extends Ui.WatchFace {
         	activity2_2_arc = 360;
         	}
         		else if (Activity2_type == 3)  {
-        				if (dc.getHeight() == 205 || 240){
+        				if (Toybox.ActivityMonitor.getInfo() has :floorsClimbed) {
         					activity2_2 = floorsClimbed;
         					if (App.getApp().getProperty("Goals") == 0) {
         					activity2_2_text = "floors";
@@ -175,8 +181,8 @@ class JSClockView extends Ui.WatchFace {
         					}
         					}
         				else {
-        					activity2_2 = "NO";
-        					activity2_2_text = "SUPPORT";
+        					activity2_2 = "No";
+        					activity2_2_text = "Supp.";
         					activity2_2_arc = 360;
         					}
         		}
@@ -198,7 +204,8 @@ class JSClockView extends Ui.WatchFace {
         		activity2_2_text = "bpm";
         		activity2_2_arc = 360;
         		}
-        			
+       	
+       	//Set Activity field 3			
         if (Activity3_type == 2) {
         activity3_3 = stepinfo;
         if (App.getApp().getProperty("Goals") == 0) {
@@ -213,7 +220,7 @@ class JSClockView extends Ui.WatchFace {
         	activity3_3_text = "kCal";
         	}
         		else if (Activity3_type == 4)  {
-        				if (dc.getHeight() == 205 || 240){
+        				if (Toybox.ActivityMonitor.getInfo() has :floorsClimbed) {
         					activity3_3 = floorsClimbed;
         					if (App.getApp().getProperty("Goals") == 0) {
         					activity3_3_text = "floors";
@@ -223,8 +230,8 @@ class JSClockView extends Ui.WatchFace {
         					}
         					}
         				else {
-        					activity3_3 = "NO";
-        					activity3_3_text = "SUPPORT";
+        					activity3_3 = "No";
+        					activity3_3_text = "Supp.";
         					}
         		}
         			else if (Activity3_type == 5)  {
@@ -244,7 +251,6 @@ class JSClockView extends Ui.WatchFace {
         		activity3_3_text = "bpm";
         		}
         	
-      
 
   	//------------------ GRAPHICS ------------------
   	
@@ -253,8 +259,7 @@ class JSClockView extends Ui.WatchFace {
     // vivoactive forerunner epix 205 x 148
     // vivoactive 3 240 x 240
   	
-  	if (active == true or (App.getApp().getProperty("Graphics") == 0)){
-  	
+ 	
   	// Background
     dc.clear();
     dc.setColor(App.getApp().getProperty("BackgroundColor"), App.getApp().getProperty("BackgroundColor"));
@@ -288,6 +293,9 @@ class JSClockView extends Ui.WatchFace {
 		else if (dc.getHeight() == 240) {
 		Graphics.Bluetooth(dc,155,20);	
 		}
+		else if (dc.getHeight() == 148) {
+		Graphics.Bluetooth(dc,140,4);
+		}
 		else {
 		Graphics.Bluetooth(dc,140,4);
 		}
@@ -299,6 +307,9 @@ class JSClockView extends Ui.WatchFace {
 	else if (dc.getHeight() == 240) {
 		Graphics.Notification(dc,not,95,20);
 	}
+	else if (dc.getHeight() == 148) {
+		Graphics.Notification(dc,not,5,4);
+	} 
 	else {
 		Graphics.Notification(dc,not,5,8);
 	} 
@@ -369,50 +380,16 @@ class JSClockView extends Ui.WatchFace {
        {
        dc.drawText(dc.getWidth()/2, dc.getHeight()-29, Gfx.FONT_TINY, " " + activity3_3 + " " + activity3_3_text + " ", Gfx.TEXT_JUSTIFY_CENTER);
   	}	
-  	}
-  	
-	// Sleep mode
-	if (active == false and (App.getApp().getProperty("Sleepmode") == 1)){
-    dc.clear();
-    dc.setColor(App.getApp().getProperty("BackgroundColor"), App.getApp().getProperty("BackgroundColor"));
-	dc.fillRectangle(0,0,dc.getWidth(), dc.getHeight());
-	
-	// Time and Date Graphics sleep mode
-  	if (dc.getHeight() == 205) {
-  		Graphics.Time(dc,74,20,Gfx.FONT_NUMBER_THAI_HOT,2);
-  		Graphics.Date(dc,74,142,2,dateInfoShort,dateInfo);
-    }
-   	else if (dc.getHeight() == 148) {
-   		Graphics.Time(dc,102,38,Gfx.FONT_NUMBER_HOT,1);
-   		Graphics.Date(dc,102,75,2,dateInfoShort,dateInfo);
-   	}
-   	else if (dc.getHeight() == 180) {
-   	   	Graphics.Time(dc,107,35,Gfx.FONT_NUMBER_HOT,1);
-   	   	Graphics.Date(dc,107,90,2,dateInfoShort,dateInfo);
-   	}
-   	else if (dc.getHeight() == 240) {
-   		Graphics.Date(dc,120,115,3,dateInfoShort,dateInfo);
-   	   	Graphics.Time(dc,120,40,Gfx.FONT_NUMBER_HOT,1);
-   	}
-   	
-    }
-    	
-	 	
+	  		
 }
     
     function onHide() {
     }
 
     function onExitSleep() {
-        active=true;
-    	Ui.requestUpdate();
-
     }
 
     function onEnterSleep() {
-        active=false;
-    	Ui.requestUpdate();
-
-    }
+     }
 
 }
