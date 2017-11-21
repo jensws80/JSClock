@@ -15,7 +15,7 @@
     <string id="Week">Visa veckonummer</string>
     <string id="Goals">Visa dina mål</string>
     <string id="Graphics">Visa Grafik</string>
-    <string id="Sleepmode">Aktivera sovaläge</string>
+    <!--<string id="Sleepmode">Aktivera sovaläge</string>-->
     
     <string id="ColorBlack">Svart</string>
     <string id="ColorDarkGray">Mörk grå</string>
@@ -47,8 +47,8 @@
     <string id="Goalson">På</string>
     <string id="Graphicsoff">Av</string>
     <string id="Graphicson">På</string>
-    <string id="Sleepoff">Av</string>
-    <string id="Sleepon">På</string>    
+    <!--<string id="Sleepoff">Av</string>
+    <string id="Sleepon">På</string> -->    
 
     
 </strings>

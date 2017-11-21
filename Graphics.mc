@@ -18,7 +18,7 @@ module Graphics{
 	if (Sys.getDeviceSettings().notificationCount >= 1) {
 		dc.setPenWidth(2);
 		dc.drawText(x+17, y-7, Gfx.FONT_XTINY, not, Gfx.TEXT_JUSTIFY_LEFT);
-		dc.drawRectangle(x, y, x+9, y+1);
+		dc.drawRectangle(x, y, 14, 9);
 		dc.drawLine(x, y, x+7, y+7);
 		dc.drawLine(x+7, y+7, x+14, y);
 		}

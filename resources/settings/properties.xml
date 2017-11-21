@@ -15,7 +15,7 @@
     <property id="Week" type="number">1</property>
     <property id="Goals" type="number">0</property>
     <property id="Graphics" type="number">1</property>
-    <property id="Sleepmode" type="number">0</property>
+    <!--<property id="Sleepmode" type="number">0</property>-->
     
    
 </properties>
