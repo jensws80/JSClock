@@ -51,15 +51,16 @@ class JSClockView extends Ui.WatchFace {
     var Activity1_type =  App.getApp().getProperty("Activity1");
    	var Activity2_type =  App.getApp().getProperty("Activity2");
     var Activity3_type =  App.getApp().getProperty("Activity3");
+    var distance = act.distance;
+    var distanceinfo = {};
     
-    //Calculate distance km or miles
-    
+    //Calculate distance km or miles    
     if (Sys.getDeviceSettings().distanceUnits == 0) {   //km
-    	 var distanceinfo = act.distance / 100000.0;
-    }
+    	 distanceinfo = distance / 100000.0;
+   	 }
    	else if (Sys.getDeviceSettings().distanceUnits == 1) {	//Miles
-     	var distanceinfo = act.distance * 0.0000062137;
-   	}
+   		distanceinfo = distance * 0.0000062137;
+	}
     
     //FloorClimbed on clock
     if (Toybox.ActivityMonitor.getInfo() has :floorsClimbed) {
