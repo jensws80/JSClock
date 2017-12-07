@@ -35,7 +35,6 @@ class JSClockView extends Ui.WatchFace {
     var stepgoal = Lang.format("$1$", [act.stepGoal]);
     var steparc = {};
    	var caloriesinfo = Lang.format("$1$", [act.calories.format("%02d")]);
-    var distanceinfo = act.distance / 100000.0;
     var not = Lang.format("$1$", [Sys.getDeviceSettings().notificationCount]);
     var activity1_1 = {}; 
     var activity1_1_text = {};
@@ -52,6 +51,16 @@ class JSClockView extends Ui.WatchFace {
     var Activity1_type =  App.getApp().getProperty("Activity1");
    	var Activity2_type =  App.getApp().getProperty("Activity2");
     var Activity3_type =  App.getApp().getProperty("Activity3");
+    var distance = act.distance;
+    var distanceinfo = {};
+    
+    //Calculate distance km or miles    
+    if (Sys.getDeviceSettings().distanceUnits == 0) {   //km
+    	 distanceinfo = distance / 100000.0;
+   	 }
+   	else if (Sys.getDeviceSettings().distanceUnits == 1) {	//Miles
+   		distanceinfo = distance * 0.0000062137;
+	}
     
     //FloorClimbed on clock
     if (Toybox.ActivityMonitor.getInfo() has :floorsClimbed) {
