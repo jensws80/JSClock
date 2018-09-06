@@ -291,7 +291,7 @@ class JSClockView extends Ui.WatchFace {
    		Graphics.Date(dc,80,115,3,dateInfoShort,dateInfo);
    	   	Graphics.Time(dc,80,40,Gfx.FONT_NUMBER_HOT,1);
    	}
-  	
+  
   	// Battery
   	Graphics.Battery(dc,batteryinfo,dc.getWidth()/2, 1);
   	   
@@ -389,7 +389,7 @@ class JSClockView extends Ui.WatchFace {
        {
        dc.drawText(dc.getWidth()/2, dc.getHeight()-29, Gfx.FONT_TINY, " " + activity3_3 + " " + activity3_3_text + " ", Gfx.TEXT_JUSTIFY_CENTER);
   	}	
-	  		
+	  	
 }
     
     function onHide() {
