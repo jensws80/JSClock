@@ -36,5 +36,7 @@ You can change colour, change activity field and a lot more in app settings.
 
 1.9 Bug Fix
 
+2.0 Add more color option for Vivoactive HR and update code to support Connect IQ SDK 3.0
+
 ## License
 This project is licensed under the terms of the GNU V.3 license.
