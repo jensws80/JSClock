@@ -15,8 +15,7 @@
     <string id="Week">Show Week number</string>
     <string id="Goals">Show your Goals</string>
     <string id="Graphics">Show Graphics</string>
-   <!-- <string id="Sleepmode">Activate Sleep mode</string> -->
-    
+     
     <string id="ColorBlack">Black</string>
     <string id="ColorDarkGray">Dark Gray</string>
     <string id="ColorLightGray">Light Gray</string>
@@ -32,7 +31,56 @@
     <string id="ColorDarkRed">Dark Red</string>
     <string id="ColorDarkGreen">Dark Green</string>
     <string id="ColorPurple">Purple</string>
-       
+
+    <!--64-bit Color -->
+    <string id="ColorNavy">Navy</string>
+    <string id="ColorMidnightBlue">Midnight Blue</string>
+    <string id="ColorDarkGreens">Dark Greens</string>
+    <string id="ColorCobaltBlue">Cobalt Blue</string>
+    <string id="ColorNavyBlue">Navy Blue</string>
+    <string id="ColorPigmentGreen">Pigment Green</string>
+    <string id="ColorPersianGreen">Persian Green</string>
+	<string id="ColorMalachite">Malachite</string>
+	<string id="ColorMediumSpringGreen">MediumSpringGreen</string>
+	<string id="ColorAqua">Aqua</string>
+	<string id="ColorMaroon">Maroon</string>
+	<string id="ColorTyrianPurple">Tyrian Purple</string>
+	<string id="ColorIndigo">Indigo</string>
+	<string id="ColorElectricIndigo">Electric Indigo</string>
+	<string id="ColorVerdunGreen">Verdun Green</string>
+	<string id="ColorNeonBlue">Neon Blue</string>
+	<string id="ColorKellyGreen">Kelly Green</string>
+	<string id="ColorFruitSalad">Fruit Salad</string>
+	<string id="ColorCadetBlue">Cadet Blue</string>
+	<string id="ColorCornflowerBlue">Cornflower Blue</string>
+	<string id="ColorBrightGreen">Bright Green</string>
+	<string id="ColorScreaminGreen">Screamin Green</string>
+	<string id="ColorBabyBlue">Baby Blue</string>
+	<string id="ColorJazzberryJam">Jazzberry Jam</string>
+	<string id="ColorDarkMagenta">Dark Magenta</string>
+	<string id="ColorRust">Rust</string>
+	<string id="ColorAppleBlossom">Apple Blossom</string>
+	<string id="ColorVioletBlue">Violet Blue</string>
+	<string id="ColorMediumPurple">Medium Purple</string>
+	<string id="ColorCitrus">Citrus</string>
+	<string id="ColorOliveGreen">Olive Green</string>
+	<string id="ColorPerano">Perano</string>
+	<string id="ColorSpringBud">Spring Bud</string>
+	<string id="ColorConifer">Conifer</string>
+	<string id="ColorMintGreen">Mint Green</string>
+	<string id="ColorPaleTurquoise">Pale Turquoise</string>
+	<string id="ColorSunsetOrange">Sunset Orange</string>
+	<string id="ColorHollywoodCerise">Hollywood Cerise</string>
+	<string id="ColorSunsetOranges">Sunset Oranges</string>
+	<string id="ColorBrilliantRose">Brilliant Rose</string>
+	<string id="ColorPinkFlamingo">Pink Flamingo</string>
+	<string id="ColorTexasRose">Texas Rose</string>
+	<string id="ColorSundown">Sundown</string>
+	<string id="ColorYellows">Yellows</string>
+	<string id="ColorLaserLemon">Laser Lemon</string>
+	<string id="ColorShalimar">Shalimar</string>
+	
+
    	<string id="Activitystep">Step</string>
     <string id="Activitycalories">Calories</string>
     <string id="Activityfloor">Floor</string>
@@ -45,6 +93,5 @@
     <string id="Goalson">On</string>
     <string id="Graphicsoff">Off</string>
     <string id="Graphicson">On</string>
-    <!--<string id="Sleepoff">Off</string>
-    <string id="Sleepon">On</string>-->
+
 </strings>

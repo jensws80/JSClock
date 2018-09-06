@@ -1,0 +1,16 @@
+project.manifest = manifest.xml
+
+# Set the resource locations
+vivoactive_hr.resourcePath = $(vivoactive_hr.resourcePath);resources-vivoactive_hr
+fr230.resourcePath = $(fr230.resourcePath);resources-fr230
+fr235.resourcePath = $(fr235.resourcePath);resources-fr230
+fr735xt.resourcePath = $(fr735xt.resourcePath);resources-fr230
+fr630.resourcePath = $(fr630.resourcePath);resources-fr230
+vivoactive.resourcePath = $(vivoactive.resourcePath);resources-vivoactive
+fr920xt.resourcePath = $(fr920xt.resourcePath);resources-vivoactive
+
+# Set English language resource location
+resourcePath.eng = $(resourcePath.eng);resources-eng
+
+# Set the Swedish language resource location
+resourcePath.swe = $(resourcePath.swe);resources-swe
