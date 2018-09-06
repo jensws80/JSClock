@@ -1,0 +1,520 @@
+<settings>
+
+	<setting propertyKey="@Properties.BackgroundColor" title="@Strings.BackgroundColorTitle">
+		<settingConfig type="list">
+			<listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+			<listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+			<listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+			<listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+			<listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+			<listEntry value="0x00AAFF">@Strings.ColorLightBlue</listEntry>
+			<listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+			<listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+			<listEntry value="0xAA0000">@Strings.ColorDarkRed</listEntry>
+			<listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+			<listEntry value="0x00AA00">@Strings.ColorDarkGreen</listEntry>
+			<listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+			<listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+			<listEntry value="0xAA00FF">@Strings.ColorPurple</listEntry>
+			
+			<listEntry value="0x000055">@Strings.ColorNavy</listEntry>
+			<listEntry value="0x0000AA">@Strings.ColorMidnightBlue</listEntry>
+			<listEntry value="0x005500">@Strings.ColorDarkGreens</listEntry>
+			<listEntry value="0x0055AA">@Strings.ColorCobaltBlue</listEntry>
+			<listEntry value="0x0055FF">@Strings.ColorNavyBlue</listEntry>
+			<listEntry value="0x00AA55">@Strings.ColorPigmentGreen</listEntry>
+			<listEntry value="0x00AAAA">@Strings.ColorPersianGreen</listEntry>
+			<listEntry value="0x00FF55">@Strings.ColorMalachite</listEntry>
+			<listEntry value="0x00FFAA">@Strings.ColorMediumSpringGreen</listEntry>
+			<listEntry value="0x00FFFF">@Strings.ColorAqua</listEntry>
+			<listEntry value="0x550000">@Strings.ColorMaroon</listEntry>
+			<listEntry value="0x550055">@Strings.ColorTyrianPurple</listEntry>
+			<listEntry value="0x5500AA">@Strings.ColorIndigo</listEntry>
+			<listEntry value="0x5500FF">@Strings.ColorElectricIndigo</listEntry>
+			<listEntry value="0x555500">@Strings.ColorVerdunGreen</listEntry>
+			<listEntry value="0x5555FF">@Strings.ColorNeonBlue</listEntry>
+			<listEntry value="0x55AA00">@Strings.ColorKellyGreen</listEntry>
+			<listEntry value="0x55AA55">@Strings.ColorFruitSalad</listEntry>
+			<listEntry value="0x55AAAA">@Strings.ColorCadetBlue</listEntry>
+			<listEntry value="0x55AAFF">@Strings.ColorCornflowerBlue</listEntry>
+			<listEntry value="0x55FF00">@Strings.ColorBrightGreen</listEntry>
+			<listEntry value="0x55FF55">@Strings.ColorScreaminGreen</listEntry>
+			<listEntry value="0x55FFFF">@Strings.ColorBabyBlue</listEntry>
+			<listEntry value="0xAA0055">@Strings.ColorJazzberryJam</listEntry>
+			<listEntry value="0xAA00AA">@Strings.ColorDarkMagenta</listEntry>
+			<listEntry value="0xAA5500">@Strings.ColorRust</listEntry>
+			<listEntry value="0xAA5555">@Strings.ColorAppleBlossom</listEntry>			
+			<listEntry value="0xAA55AA">@Strings.ColorVioletBlue</listEntry>
+			<listEntry value="0xAA55FF">@Strings.ColorMediumPurple</listEntry>
+			<listEntry value="0xAAAA00">@Strings.ColorCitrus</listEntry>
+			<listEntry value="0xAAAA55">@Strings.ColorOliveGreen</listEntry>
+			<listEntry value="0xAAAAFF">@Strings.ColorPerano</listEntry>
+			<listEntry value="0xAAFF00">@Strings.ColorSpringBud</listEntry>
+			<listEntry value="0xAAFF55">@Strings.ColorConifer</listEntry>
+			<listEntry value="0xAAFFAA">@Strings.ColorMintGreen</listEntry>
+			<listEntry value="0xAAFFFF">@Strings.ColorPaleTurquoise</listEntry>
+			<listEntry value="0xFF0055">@Strings.ColorSunsetOrange</listEntry>
+			<listEntry value="0xFF00AA">@Strings.ColorHollywoodCerise</listEntry>
+			<listEntry value="0xFF5555">@Strings.ColorSunsetOranges</listEntry>
+			<listEntry value="0xFF55AA">@Strings.ColorBrilliantRose</listEntry>
+			<listEntry value="0xFF55FF">@Strings.ColorPinkFlamingo</listEntry>
+			<listEntry value="0xFFAA55">@Strings.ColorTexasRose</listEntry>
+			<listEntry value="0xFFAAAA">@Strings.ColorSundown</listEntry>
+			<listEntry value="0xFFFF00">@Strings.ColorYellows</listEntry>
+			<listEntry value="0xFFFF55">@Strings.ColorLaserLemon</listEntry>
+			<listEntry value="0xFFFFAA">@Strings.ColorShalimar</listEntry>			
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.GraphicsColor" title="@Strings.GraphicsColorTitle">
+		<settingConfig type="list">
+			<listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+			<listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+			<listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+			<listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+			<listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+			<listEntry value="0x00AAFF">@Strings.ColorLightBlue</listEntry>
+			<listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+			<listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+			<listEntry value="0xAA0000">@Strings.ColorDarkRed</listEntry>
+			<listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+			<listEntry value="0x00AA00">@Strings.ColorDarkGreen</listEntry>
+			<listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+			<listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+			<listEntry value="0xAA00FF">@Strings.ColorPurple</listEntry>
+			
+			<listEntry value="0x000055">@Strings.ColorNavy</listEntry>
+			<listEntry value="0x0000AA">@Strings.ColorMidnightBlue</listEntry>
+			<listEntry value="0x005500">@Strings.ColorDarkGreens</listEntry>
+			<listEntry value="0x0055AA">@Strings.ColorCobaltBlue</listEntry>
+			<listEntry value="0x0055FF">@Strings.ColorNavyBlue</listEntry>
+			<listEntry value="0x00AA55">@Strings.ColorPigmentGreen</listEntry>
+			<listEntry value="0x00AAAA">@Strings.ColorPersianGreen</listEntry>
+			<listEntry value="0x00FF55">@Strings.ColorMalachite</listEntry>
+			<listEntry value="0x00FFAA">@Strings.ColorMediumSpringGreen</listEntry>
+			<listEntry value="0x00FFFF">@Strings.ColorAqua</listEntry>
+			<listEntry value="0x550000">@Strings.ColorMaroon</listEntry>
+			<listEntry value="0x550055">@Strings.ColorTyrianPurple</listEntry>
+			<listEntry value="0x5500AA">@Strings.ColorIndigo</listEntry>
+			<listEntry value="0x5500FF">@Strings.ColorElectricIndigo</listEntry>
+			<listEntry value="0x555500">@Strings.ColorVerdunGreen</listEntry>
+			<listEntry value="0x5555FF">@Strings.ColorNeonBlue</listEntry>
+			<listEntry value="0x55AA00">@Strings.ColorKellyGreen</listEntry>
+			<listEntry value="0x55AA55">@Strings.ColorFruitSalad</listEntry>
+			<listEntry value="0x55AAAA">@Strings.ColorCadetBlue</listEntry>
+			<listEntry value="0x55AAFF">@Strings.ColorCornflowerBlue</listEntry>
+			<listEntry value="0x55FF00">@Strings.ColorBrightGreen</listEntry>
+			<listEntry value="0x55FF55">@Strings.ColorScreaminGreen</listEntry>
+			<listEntry value="0x55FFFF">@Strings.ColorBabyBlue</listEntry>
+			<listEntry value="0xAA0055">@Strings.ColorJazzberryJam</listEntry>
+			<listEntry value="0xAA00AA">@Strings.ColorDarkMagenta</listEntry>
+			<listEntry value="0xAA5500">@Strings.ColorRust</listEntry>
+			<listEntry value="0xAA5555">@Strings.ColorAppleBlossom</listEntry>			
+			<listEntry value="0xAA55AA">@Strings.ColorVioletBlue</listEntry>
+			<listEntry value="0xAA55FF">@Strings.ColorMediumPurple</listEntry>
+			<listEntry value="0xAAAA00">@Strings.ColorCitrus</listEntry>
+			<listEntry value="0xAAAA55">@Strings.ColorOliveGreen</listEntry>
+			<listEntry value="0xAAAAFF">@Strings.ColorPerano</listEntry>
+			<listEntry value="0xAAFF00">@Strings.ColorSpringBud</listEntry>
+			<listEntry value="0xAAFF55">@Strings.ColorConifer</listEntry>
+			<listEntry value="0xAAFFAA">@Strings.ColorMintGreen</listEntry>
+			<listEntry value="0xAAFFFF">@Strings.ColorPaleTurquoise</listEntry>
+			<listEntry value="0xFF0055">@Strings.ColorSunsetOrange</listEntry>
+			<listEntry value="0xFF00AA">@Strings.ColorHollywoodCerise</listEntry>
+			<listEntry value="0xFF5555">@Strings.ColorSunsetOranges</listEntry>
+			<listEntry value="0xFF55AA">@Strings.ColorBrilliantRose</listEntry>
+			<listEntry value="0xFF55FF">@Strings.ColorPinkFlamingo</listEntry>
+			<listEntry value="0xFFAA55">@Strings.ColorTexasRose</listEntry>
+			<listEntry value="0xFFAAAA">@Strings.ColorSundown</listEntry>
+			<listEntry value="0xFFFF00">@Strings.ColorYellows</listEntry>
+			<listEntry value="0xFFFF55">@Strings.ColorLaserLemon</listEntry>
+			<listEntry value="0xFFFFAA">@Strings.ColorShalimar</listEntry>	
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.TimeColor" title="@Strings.TimeColorTitle">
+		<settingConfig type="list">
+			<listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+			<listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+			<listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+			<listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+			<listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+			<listEntry value="0x00AAFF">@Strings.ColorLightBlue</listEntry>
+			<listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+			<listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+			<listEntry value="0xAA0000">@Strings.ColorDarkRed</listEntry>
+			<listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+			<listEntry value="0x00AA00">@Strings.ColorDarkGreen</listEntry>
+			<listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+			<listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+			<listEntry value="0xAA00FF">@Strings.ColorPurple</listEntry>
+			
+			<listEntry value="0x000055">@Strings.ColorNavy</listEntry>
+			<listEntry value="0x0000AA">@Strings.ColorMidnightBlue</listEntry>
+			<listEntry value="0x005500">@Strings.ColorDarkGreens</listEntry>
+			<listEntry value="0x0055AA">@Strings.ColorCobaltBlue</listEntry>
+			<listEntry value="0x0055FF">@Strings.ColorNavyBlue</listEntry>
+			<listEntry value="0x00AA55">@Strings.ColorPigmentGreen</listEntry>
+			<listEntry value="0x00AAAA">@Strings.ColorPersianGreen</listEntry>
+			<listEntry value="0x00FF55">@Strings.ColorMalachite</listEntry>
+			<listEntry value="0x00FFAA">@Strings.ColorMediumSpringGreen</listEntry>
+			<listEntry value="0x00FFFF">@Strings.ColorAqua</listEntry>
+			<listEntry value="0x550000">@Strings.ColorMaroon</listEntry>
+			<listEntry value="0x550055">@Strings.ColorTyrianPurple</listEntry>
+			<listEntry value="0x5500AA">@Strings.ColorIndigo</listEntry>
+			<listEntry value="0x5500FF">@Strings.ColorElectricIndigo</listEntry>
+			<listEntry value="0x555500">@Strings.ColorVerdunGreen</listEntry>
+			<listEntry value="0x5555FF">@Strings.ColorNeonBlue</listEntry>
+			<listEntry value="0x55AA00">@Strings.ColorKellyGreen</listEntry>
+			<listEntry value="0x55AA55">@Strings.ColorFruitSalad</listEntry>
+			<listEntry value="0x55AAAA">@Strings.ColorCadetBlue</listEntry>
+			<listEntry value="0x55AAFF">@Strings.ColorCornflowerBlue</listEntry>
+			<listEntry value="0x55FF00">@Strings.ColorBrightGreen</listEntry>
+			<listEntry value="0x55FF55">@Strings.ColorScreaminGreen</listEntry>
+			<listEntry value="0x55FFFF">@Strings.ColorBabyBlue</listEntry>
+			<listEntry value="0xAA0055">@Strings.ColorJazzberryJam</listEntry>
+			<listEntry value="0xAA00AA">@Strings.ColorDarkMagenta</listEntry>
+			<listEntry value="0xAA5500">@Strings.ColorRust</listEntry>
+			<listEntry value="0xAA5555">@Strings.ColorAppleBlossom</listEntry>			
+			<listEntry value="0xAA55AA">@Strings.ColorVioletBlue</listEntry>
+			<listEntry value="0xAA55FF">@Strings.ColorMediumPurple</listEntry>
+			<listEntry value="0xAAAA00">@Strings.ColorCitrus</listEntry>
+			<listEntry value="0xAAAA55">@Strings.ColorOliveGreen</listEntry>
+			<listEntry value="0xAAAAFF">@Strings.ColorPerano</listEntry>
+			<listEntry value="0xAAFF00">@Strings.ColorSpringBud</listEntry>
+			<listEntry value="0xAAFF55">@Strings.ColorConifer</listEntry>
+			<listEntry value="0xAAFFAA">@Strings.ColorMintGreen</listEntry>
+			<listEntry value="0xAAFFFF">@Strings.ColorPaleTurquoise</listEntry>
+			<listEntry value="0xFF0055">@Strings.ColorSunsetOrange</listEntry>
+			<listEntry value="0xFF00AA">@Strings.ColorHollywoodCerise</listEntry>
+			<listEntry value="0xFF5555">@Strings.ColorSunsetOranges</listEntry>
+			<listEntry value="0xFF55AA">@Strings.ColorBrilliantRose</listEntry>
+			<listEntry value="0xFF55FF">@Strings.ColorPinkFlamingo</listEntry>
+			<listEntry value="0xFFAA55">@Strings.ColorTexasRose</listEntry>
+			<listEntry value="0xFFAAAA">@Strings.ColorSundown</listEntry>
+			<listEntry value="0xFFFF00">@Strings.ColorYellows</listEntry>
+			<listEntry value="0xFFFF55">@Strings.ColorLaserLemon</listEntry>
+			<listEntry value="0xFFFFAA">@Strings.ColorShalimar</listEntry>	
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.DateColor" title="@Strings.DateColorTitle">
+		<settingConfig type="list">
+			<listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+			<listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+			<listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+			<listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+			<listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+			<listEntry value="0x00AAFF">@Strings.ColorLightBlue</listEntry>
+			<listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+			<listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+			<listEntry value="0xAA0000">@Strings.ColorDarkRed</listEntry>
+			<listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+			<listEntry value="0x00AA00">@Strings.ColorDarkGreen</listEntry>
+			<listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+			<listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+			<listEntry value="0xAA00FF">@Strings.ColorPurple</listEntry>
+			
+			<listEntry value="0x000055">@Strings.ColorNavy</listEntry>
+			<listEntry value="0x0000AA">@Strings.ColorMidnightBlue</listEntry>
+			<listEntry value="0x005500">@Strings.ColorDarkGreens</listEntry>
+			<listEntry value="0x0055AA">@Strings.ColorCobaltBlue</listEntry>
+			<listEntry value="0x0055FF">@Strings.ColorNavyBlue</listEntry>
+			<listEntry value="0x00AA55">@Strings.ColorPigmentGreen</listEntry>
+			<listEntry value="0x00AAAA">@Strings.ColorPersianGreen</listEntry>
+			<listEntry value="0x00FF55">@Strings.ColorMalachite</listEntry>
+			<listEntry value="0x00FFAA">@Strings.ColorMediumSpringGreen</listEntry>
+			<listEntry value="0x00FFFF">@Strings.ColorAqua</listEntry>
+			<listEntry value="0x550000">@Strings.ColorMaroon</listEntry>
+			<listEntry value="0x550055">@Strings.ColorTyrianPurple</listEntry>
+			<listEntry value="0x5500AA">@Strings.ColorIndigo</listEntry>
+			<listEntry value="0x5500FF">@Strings.ColorElectricIndigo</listEntry>
+			<listEntry value="0x555500">@Strings.ColorVerdunGreen</listEntry>
+			<listEntry value="0x5555FF">@Strings.ColorNeonBlue</listEntry>
+			<listEntry value="0x55AA00">@Strings.ColorKellyGreen</listEntry>
+			<listEntry value="0x55AA55">@Strings.ColorFruitSalad</listEntry>
+			<listEntry value="0x55AAAA">@Strings.ColorCadetBlue</listEntry>
+			<listEntry value="0x55AAFF">@Strings.ColorCornflowerBlue</listEntry>
+			<listEntry value="0x55FF00">@Strings.ColorBrightGreen</listEntry>
+			<listEntry value="0x55FF55">@Strings.ColorScreaminGreen</listEntry>
+			<listEntry value="0x55FFFF">@Strings.ColorBabyBlue</listEntry>
+			<listEntry value="0xAA0055">@Strings.ColorJazzberryJam</listEntry>
+			<listEntry value="0xAA00AA">@Strings.ColorDarkMagenta</listEntry>
+			<listEntry value="0xAA5500">@Strings.ColorRust</listEntry>
+			<listEntry value="0xAA5555">@Strings.ColorAppleBlossom</listEntry>			
+			<listEntry value="0xAA55AA">@Strings.ColorVioletBlue</listEntry>
+			<listEntry value="0xAA55FF">@Strings.ColorMediumPurple</listEntry>
+			<listEntry value="0xAAAA00">@Strings.ColorCitrus</listEntry>
+			<listEntry value="0xAAAA55">@Strings.ColorOliveGreen</listEntry>
+			<listEntry value="0xAAAAFF">@Strings.ColorPerano</listEntry>
+			<listEntry value="0xAAFF00">@Strings.ColorSpringBud</listEntry>
+			<listEntry value="0xAAFF55">@Strings.ColorConifer</listEntry>
+			<listEntry value="0xAAFFAA">@Strings.ColorMintGreen</listEntry>
+			<listEntry value="0xAAFFFF">@Strings.ColorPaleTurquoise</listEntry>
+			<listEntry value="0xFF0055">@Strings.ColorSunsetOrange</listEntry>
+			<listEntry value="0xFF00AA">@Strings.ColorHollywoodCerise</listEntry>
+			<listEntry value="0xFF5555">@Strings.ColorSunsetOranges</listEntry>
+			<listEntry value="0xFF55AA">@Strings.ColorBrilliantRose</listEntry>
+			<listEntry value="0xFF55FF">@Strings.ColorPinkFlamingo</listEntry>
+			<listEntry value="0xFFAA55">@Strings.ColorTexasRose</listEntry>
+			<listEntry value="0xFFAAAA">@Strings.ColorSundown</listEntry>
+			<listEntry value="0xFFFF00">@Strings.ColorYellows</listEntry>
+			<listEntry value="0xFFFF55">@Strings.ColorLaserLemon</listEntry>
+			<listEntry value="0xFFFFAA">@Strings.ColorShalimar</listEntry>	
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.UpperfieldColor" title="@Strings.UpperfieldColorTitle">
+		<settingConfig type="list">
+			<listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+			<listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+			<listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+			<listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+			<listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+			<listEntry value="0x00AAFF">@Strings.ColorLightBlue</listEntry>
+			<listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+			<listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+			<listEntry value="0xAA0000">@Strings.ColorDarkRed</listEntry>
+			<listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+			<listEntry value="0x00AA00">@Strings.ColorDarkGreen</listEntry>
+			<listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+			<listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+			<listEntry value="0xAA00FF">@Strings.ColorPurple</listEntry>
+			
+			<listEntry value="0x000055">@Strings.ColorNavy</listEntry>
+			<listEntry value="0x0000AA">@Strings.ColorMidnightBlue</listEntry>
+			<listEntry value="0x005500">@Strings.ColorDarkGreens</listEntry>
+			<listEntry value="0x0055AA">@Strings.ColorCobaltBlue</listEntry>
+			<listEntry value="0x0055FF">@Strings.ColorNavyBlue</listEntry>
+			<listEntry value="0x00AA55">@Strings.ColorPigmentGreen</listEntry>
+			<listEntry value="0x00AAAA">@Strings.ColorPersianGreen</listEntry>
+			<listEntry value="0x00FF55">@Strings.ColorMalachite</listEntry>
+			<listEntry value="0x00FFAA">@Strings.ColorMediumSpringGreen</listEntry>
+			<listEntry value="0x00FFFF">@Strings.ColorAqua</listEntry>
+			<listEntry value="0x550000">@Strings.ColorMaroon</listEntry>
+			<listEntry value="0x550055">@Strings.ColorTyrianPurple</listEntry>
+			<listEntry value="0x5500AA">@Strings.ColorIndigo</listEntry>
+			<listEntry value="0x5500FF">@Strings.ColorElectricIndigo</listEntry>
+			<listEntry value="0x555500">@Strings.ColorVerdunGreen</listEntry>
+			<listEntry value="0x5555FF">@Strings.ColorNeonBlue</listEntry>
+			<listEntry value="0x55AA00">@Strings.ColorKellyGreen</listEntry>
+			<listEntry value="0x55AA55">@Strings.ColorFruitSalad</listEntry>
+			<listEntry value="0x55AAAA">@Strings.ColorCadetBlue</listEntry>
+			<listEntry value="0x55AAFF">@Strings.ColorCornflowerBlue</listEntry>
+			<listEntry value="0x55FF00">@Strings.ColorBrightGreen</listEntry>
+			<listEntry value="0x55FF55">@Strings.ColorScreaminGreen</listEntry>
+			<listEntry value="0x55FFFF">@Strings.ColorBabyBlue</listEntry>
+			<listEntry value="0xAA0055">@Strings.ColorJazzberryJam</listEntry>
+			<listEntry value="0xAA00AA">@Strings.ColorDarkMagenta</listEntry>
+			<listEntry value="0xAA5500">@Strings.ColorRust</listEntry>
+			<listEntry value="0xAA5555">@Strings.ColorAppleBlossom</listEntry>			
+			<listEntry value="0xAA55AA">@Strings.ColorVioletBlue</listEntry>
+			<listEntry value="0xAA55FF">@Strings.ColorMediumPurple</listEntry>
+			<listEntry value="0xAAAA00">@Strings.ColorCitrus</listEntry>
+			<listEntry value="0xAAAA55">@Strings.ColorOliveGreen</listEntry>
+			<listEntry value="0xAAAAFF">@Strings.ColorPerano</listEntry>
+			<listEntry value="0xAAFF00">@Strings.ColorSpringBud</listEntry>
+			<listEntry value="0xAAFF55">@Strings.ColorConifer</listEntry>
+			<listEntry value="0xAAFFAA">@Strings.ColorMintGreen</listEntry>
+			<listEntry value="0xAAFFFF">@Strings.ColorPaleTurquoise</listEntry>
+			<listEntry value="0xFF0055">@Strings.ColorSunsetOrange</listEntry>
+			<listEntry value="0xFF00AA">@Strings.ColorHollywoodCerise</listEntry>
+			<listEntry value="0xFF5555">@Strings.ColorSunsetOranges</listEntry>
+			<listEntry value="0xFF55AA">@Strings.ColorBrilliantRose</listEntry>
+			<listEntry value="0xFF55FF">@Strings.ColorPinkFlamingo</listEntry>
+			<listEntry value="0xFFAA55">@Strings.ColorTexasRose</listEntry>
+			<listEntry value="0xFFAAAA">@Strings.ColorSundown</listEntry>
+			<listEntry value="0xFFFF00">@Strings.ColorYellows</listEntry>
+			<listEntry value="0xFFFF55">@Strings.ColorLaserLemon</listEntry>
+			<listEntry value="0xFFFFAA">@Strings.ColorShalimar</listEntry>	
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.ActivityColor" title="@Strings.ActivityColorTitle">
+		<settingConfig type="list">
+			<listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+			<listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+			<listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+			<listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+			<listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+			<listEntry value="0x00AAFF">@Strings.ColorLightBlue</listEntry>
+			<listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+			<listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+			<listEntry value="0xAA0000">@Strings.ColorDarkRed</listEntry>
+			<listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+			<listEntry value="0x00AA00">@Strings.ColorDarkGreen</listEntry>
+			<listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+			<listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+			<listEntry value="0xAA00FF">@Strings.ColorPurple</listEntry>
+			
+			<listEntry value="0x000055">@Strings.ColorNavy</listEntry>
+			<listEntry value="0x0000AA">@Strings.ColorMidnightBlue</listEntry>
+			<listEntry value="0x005500">@Strings.ColorDarkGreens</listEntry>
+			<listEntry value="0x0055AA">@Strings.ColorCobaltBlue</listEntry>
+			<listEntry value="0x0055FF">@Strings.ColorNavyBlue</listEntry>
+			<listEntry value="0x00AA55">@Strings.ColorPigmentGreen</listEntry>
+			<listEntry value="0x00AAAA">@Strings.ColorPersianGreen</listEntry>
+			<listEntry value="0x00FF55">@Strings.ColorMalachite</listEntry>
+			<listEntry value="0x00FFAA">@Strings.ColorMediumSpringGreen</listEntry>
+			<listEntry value="0x00FFFF">@Strings.ColorAqua</listEntry>
+			<listEntry value="0x550000">@Strings.ColorMaroon</listEntry>
+			<listEntry value="0x550055">@Strings.ColorTyrianPurple</listEntry>
+			<listEntry value="0x5500AA">@Strings.ColorIndigo</listEntry>
+			<listEntry value="0x5500FF">@Strings.ColorElectricIndigo</listEntry>
+			<listEntry value="0x555500">@Strings.ColorVerdunGreen</listEntry>
+			<listEntry value="0x5555FF">@Strings.ColorNeonBlue</listEntry>
+			<listEntry value="0x55AA00">@Strings.ColorKellyGreen</listEntry>
+			<listEntry value="0x55AA55">@Strings.ColorFruitSalad</listEntry>
+			<listEntry value="0x55AAAA">@Strings.ColorCadetBlue</listEntry>
+			<listEntry value="0x55AAFF">@Strings.ColorCornflowerBlue</listEntry>
+			<listEntry value="0x55FF00">@Strings.ColorBrightGreen</listEntry>
+			<listEntry value="0x55FF55">@Strings.ColorScreaminGreen</listEntry>
+			<listEntry value="0x55FFFF">@Strings.ColorBabyBlue</listEntry>
+			<listEntry value="0xAA0055">@Strings.ColorJazzberryJam</listEntry>
+			<listEntry value="0xAA00AA">@Strings.ColorDarkMagenta</listEntry>
+			<listEntry value="0xAA5500">@Strings.ColorRust</listEntry>
+			<listEntry value="0xAA5555">@Strings.ColorAppleBlossom</listEntry>			
+			<listEntry value="0xAA55AA">@Strings.ColorVioletBlue</listEntry>
+			<listEntry value="0xAA55FF">@Strings.ColorMediumPurple</listEntry>
+			<listEntry value="0xAAAA00">@Strings.ColorCitrus</listEntry>
+			<listEntry value="0xAAAA55">@Strings.ColorOliveGreen</listEntry>
+			<listEntry value="0xAAAAFF">@Strings.ColorPerano</listEntry>
+			<listEntry value="0xAAFF00">@Strings.ColorSpringBud</listEntry>
+			<listEntry value="0xAAFF55">@Strings.ColorConifer</listEntry>
+			<listEntry value="0xAAFFAA">@Strings.ColorMintGreen</listEntry>
+			<listEntry value="0xAAFFFF">@Strings.ColorPaleTurquoise</listEntry>
+			<listEntry value="0xFF0055">@Strings.ColorSunsetOrange</listEntry>
+			<listEntry value="0xFF00AA">@Strings.ColorHollywoodCerise</listEntry>
+			<listEntry value="0xFF5555">@Strings.ColorSunsetOranges</listEntry>
+			<listEntry value="0xFF55AA">@Strings.ColorBrilliantRose</listEntry>
+			<listEntry value="0xFF55FF">@Strings.ColorPinkFlamingo</listEntry>
+			<listEntry value="0xFFAA55">@Strings.ColorTexasRose</listEntry>
+			<listEntry value="0xFFAAAA">@Strings.ColorSundown</listEntry>
+			<listEntry value="0xFFFF00">@Strings.ColorYellows</listEntry>
+			<listEntry value="0xFFFF55">@Strings.ColorLaserLemon</listEntry>
+			<listEntry value="0xFFFFAA">@Strings.ColorShalimar</listEntry>	
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.AlarmColor" title="@Strings.AlarmColorTitle">
+		<settingConfig type="list">
+			<listEntry value="0xFF0000">@Strings.ColorRed</listEntry>
+			<listEntry value="0x000000">@Strings.ColorBlack</listEntry>
+			<listEntry value="0x555555">@Strings.ColorDarkGray</listEntry>
+			<listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+			<listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+			<listEntry value="0xFFAA00">@Strings.ColorYellow</listEntry>
+			<listEntry value="0x00AAFF">@Strings.ColorLightBlue</listEntry>
+			<listEntry value="0x0000FF">@Strings.ColorBlue</listEntry>
+			<listEntry value="0xAA0000">@Strings.ColorDarkRed</listEntry>
+			<listEntry value="0x00FF00">@Strings.ColorGreen</listEntry>
+			<listEntry value="0x00AA00">@Strings.ColorDarkGreen</listEntry>
+			<listEntry value="0xFF00FF">@Strings.ColorPink</listEntry>
+			<listEntry value="0xFF5500">@Strings.ColorOrange</listEntry>
+			<listEntry value="0xAA00FF">@Strings.ColorPurple</listEntry>
+			
+			<listEntry value="0x000055">@Strings.ColorNavy</listEntry>
+			<listEntry value="0x0000AA">@Strings.ColorMidnightBlue</listEntry>
+			<listEntry value="0x005500">@Strings.ColorDarkGreens</listEntry>
+			<listEntry value="0x0055AA">@Strings.ColorCobaltBlue</listEntry>
+			<listEntry value="0x0055FF">@Strings.ColorNavyBlue</listEntry>
+			<listEntry value="0x00AA55">@Strings.ColorPigmentGreen</listEntry>
+			<listEntry value="0x00AAAA">@Strings.ColorPersianGreen</listEntry>
+			<listEntry value="0x00FF55">@Strings.ColorMalachite</listEntry>
+			<listEntry value="0x00FFAA">@Strings.ColorMediumSpringGreen</listEntry>
+			<listEntry value="0x00FFFF">@Strings.ColorAqua</listEntry>
+			<listEntry value="0x550000">@Strings.ColorMaroon</listEntry>
+			<listEntry value="0x550055">@Strings.ColorTyrianPurple</listEntry>
+			<listEntry value="0x5500AA">@Strings.ColorIndigo</listEntry>
+			<listEntry value="0x5500FF">@Strings.ColorElectricIndigo</listEntry>
+			<listEntry value="0x555500">@Strings.ColorVerdunGreen</listEntry>
+			<listEntry value="0x5555FF">@Strings.ColorNeonBlue</listEntry>
+			<listEntry value="0x55AA00">@Strings.ColorKellyGreen</listEntry>
+			<listEntry value="0x55AA55">@Strings.ColorFruitSalad</listEntry>
+			<listEntry value="0x55AAAA">@Strings.ColorCadetBlue</listEntry>
+			<listEntry value="0x55AAFF">@Strings.ColorCornflowerBlue</listEntry>
+			<listEntry value="0x55FF00">@Strings.ColorBrightGreen</listEntry>
+			<listEntry value="0x55FF55">@Strings.ColorScreaminGreen</listEntry>
+			<listEntry value="0x55FFFF">@Strings.ColorBabyBlue</listEntry>
+			<listEntry value="0xAA0055">@Strings.ColorJazzberryJam</listEntry>
+			<listEntry value="0xAA00AA">@Strings.ColorDarkMagenta</listEntry>
+			<listEntry value="0xAA5500">@Strings.ColorRust</listEntry>
+			<listEntry value="0xAA5555">@Strings.ColorAppleBlossom</listEntry>			
+			<listEntry value="0xAA55AA">@Strings.ColorVioletBlue</listEntry>
+			<listEntry value="0xAA55FF">@Strings.ColorMediumPurple</listEntry>
+			<listEntry value="0xAAAA00">@Strings.ColorCitrus</listEntry>
+			<listEntry value="0xAAAA55">@Strings.ColorOliveGreen</listEntry>
+			<listEntry value="0xAAAAFF">@Strings.ColorPerano</listEntry>
+			<listEntry value="0xAAFF00">@Strings.ColorSpringBud</listEntry>
+			<listEntry value="0xAAFF55">@Strings.ColorConifer</listEntry>
+			<listEntry value="0xAAFFAA">@Strings.ColorMintGreen</listEntry>
+			<listEntry value="0xAAFFFF">@Strings.ColorPaleTurquoise</listEntry>
+			<listEntry value="0xFF0055">@Strings.ColorSunsetOrange</listEntry>
+			<listEntry value="0xFF00AA">@Strings.ColorHollywoodCerise</listEntry>
+			<listEntry value="0xFF5555">@Strings.ColorSunsetOranges</listEntry>
+			<listEntry value="0xFF55AA">@Strings.ColorBrilliantRose</listEntry>
+			<listEntry value="0xFF55FF">@Strings.ColorPinkFlamingo</listEntry>
+			<listEntry value="0xFFAA55">@Strings.ColorTexasRose</listEntry>
+			<listEntry value="0xFFAAAA">@Strings.ColorSundown</listEntry>
+			<listEntry value="0xFFFF00">@Strings.ColorYellows</listEntry>
+			<listEntry value="0xFFFF55">@Strings.ColorLaserLemon</listEntry>
+			<listEntry value="0xFFFFAA">@Strings.ColorShalimar</listEntry>	
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.Alarm" title="@Strings.AlarmTitle">
+		<settingConfig type="Numeric" min="0" max="100" />
+	</setting>
+
+	<setting propertyKey="@Properties.Activity1" title="@Strings.Activity1Title">
+		<settingConfig type="list">
+			<listEntry value="1">@Strings.Activitystep</listEntry>
+			<listEntry value="2">@Strings.Activitycalories</listEntry>
+			<listEntry value="3">@Strings.Activityfloor</listEntry>
+			<listEntry value="4">@Strings.Activitydistance</listEntry>
+			<listEntry value="5">@Strings.ActivityHeartRate</listEntry>
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.Activity2" title="@Strings.Activity2Title">
+		<settingConfig type="list">
+			<listEntry value="1">@Strings.Activitystep</listEntry>
+			<listEntry value="2">@Strings.Activitycalories</listEntry>
+			<listEntry value="3">@Strings.Activityfloor</listEntry>
+			<listEntry value="4">@Strings.Activitydistance</listEntry>
+			<listEntry value="5">@Strings.ActivityHeartRate</listEntry>
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.Activity3" title="@Strings.Activity3Title">
+		<settingConfig type="list">
+			<listEntry value="1">@Strings.Activityoff</listEntry>
+			<listEntry value="2">@Strings.Activitystep</listEntry>
+			<listEntry value="3">@Strings.Activitycalories</listEntry>
+			<listEntry value="4">@Strings.Activityfloor</listEntry>
+			<listEntry value="5">@Strings.Activitydistance</listEntry>
+			<listEntry value="6">@Strings.ActivityHeartRate</listEntry>
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.Week" title="@Strings.Week">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.Weekoff</listEntry>
+			<listEntry value="1">@Strings.Weekon</listEntry>
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.Goals" title="@Strings.Goals">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.Goalsoff</listEntry>
+			<listEntry value="1">@Strings.Goalson</listEntry>
+		</settingConfig>
+	</setting>
+
+	<setting propertyKey="@Properties.Graphics" title="@Strings.Graphics">
+		<settingConfig type="list">
+			<listEntry value="0">@Strings.Graphicsoff</listEntry>
+			<listEntry value="1">@Strings.Graphicson</listEntry>
+		</settingConfig>
+	</setting>
+</settings>
