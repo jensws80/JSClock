@@ -10,7 +10,19 @@ vivoactive.resourcePath = $(vivoactive.resourcePath);resources-vivoactive
 fr920xt.resourcePath = $(fr920xt.resourcePath);resources-vivoactive
 
 # Set English language resource location
-resourcePath.eng = $(resourcePath.eng);resources-eng
+vivoactive_hr.lang.eng = $(vivoactive_hr.lang.eng);resources-eng
+fr230.lang.eng = $(fr230.lang.eng);resources-eng
+fr235.lang.eng = $(fr235.lang.eng);resources-eng
+fr735xt.lang.eng = $(fr735xt.lang.eng);resources-eng
+fr630.lang.eng = $(fr630.lang.eng);resources-eng
+vivoactive.lang.eng = $(vivoactive.lang.eng);resources-eng
+fr920xt.lang.eng = $(fr920xt.lang.eng);resources-eng
 
 # Set the Swedish language resource location
-resourcePath.swe = $(resourcePath.swe);resources-swe
+vivoactive_hr.lang.swe = $(vivoactive_hr.lang.swe);resources-swe
+fr230.lang.swe = $(fr230.lang.swe);resources-swe
+fr235.lang.swe = $(fr235.lang.swe);resources-swe
+fr735xt.lang.swe = $(fr735xt.lang.swe);resources-swe
+fr630.lang.swe = $(fr630.lang.swe);resources-swe
+vivoactive.lang.swe = $(vivoactive.lang.swe);resources-swe
+fr920xt.lang.swe = $(fr920xt.lang.swe);resources-swe
